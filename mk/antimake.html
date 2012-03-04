@@ -2,28 +2,15 @@
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.4" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.5.2" />
 <title>antimake.mk(5)</title>
 <style type="text/css">
-/* Sans-serif font. */
-h1, h2, h3, h4, h5, h6,
-div.title, caption.title,
-thead, p.table.header,
-div#toctitle,
-span#author, span#revnumber, span#revdate, span#revremark,
-div#footer {
-  font-family: Arial,Helvetica,sans-serif;
-}
-
-/* Serif font. */
-div.sectionbody {
-  font-family: Georgia,"Times New Roman",Times,serif;
-}
-
-/* Monospace font. */
-tt {
-  font-size: inherit;
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
 }
 
 body {
@@ -49,12 +36,12 @@ strong {
 }
 
 tt {
-  font-size: inherit;
   color: navy;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #527bbd;
+  font-family: sans-serif;
   margin-top: 1.2em;
   margin-bottom: 0.5em;
   line-height: 1.3;
@@ -74,6 +61,7 @@ h3 + * {
 }
 
 div.sectionbody {
+  font-family: serif;
   margin-left: 0;
 }
 
@@ -89,8 +77,6 @@ p {
 ul, ol, li > p {
   margin-top: 0;
 }
-ul > li     { color: #aaa; }
-ul > li > * { color: black; }
 
 pre {
   padding: 0;
@@ -99,15 +85,18 @@ pre {
 
 span#author {
   color: #527bbd;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 1.1em;
 }
 span#email {
 }
 span#revnumber, span#revdate, span#revremark {
+  font-family: sans-serif;
 }
 
 div#footer {
+  font-family: sans-serif;
   font-size: small;
   border-top: 2px solid silver;
   padding-top: 0.5em;
@@ -146,6 +135,7 @@ div.content { /* Block element content. */
 /* Block element titles. */
 div.title, caption.title {
   color: #527bbd;
+  font-family: sans-serif;
   font-weight: bold;
   text-align: left;
   margin-top: 1.0em;
@@ -167,15 +157,13 @@ div.content + div.title {
 
 div.sidebarblock > div.content {
   background: #ffffee;
-  border: 1px solid #dddddd;
-  border-left: 4px solid #f0f0f0;
+  border: 1px solid silver;
   padding: 0.5em;
 }
 
 div.listingblock > div.content {
-  border: 1px solid #dddddd;
-  border-left: 5px solid #f0f0f0;
-  background: #f8f8f8;
+  border: 1px solid silver;
+  background: #f4f4f4;
   padding: 0.5em;
 }
 
@@ -183,7 +171,7 @@ div.quoteblock, div.verseblock {
   padding-left: 1.0em;
   margin-left: 1.0em;
   margin-right: 10%;
-  border-left: 5px solid #f0f0f0;
+  border-left: 5px solid #dddddd;
   color: #777777;
 }
 
@@ -192,9 +180,8 @@ div.quoteblock > div.attribution {
   text-align: right;
 }
 
-div.verseblock > pre.content {
-  font-family: inherit;
-  font-size: inherit;
+div.verseblock > div.content {
+  white-space: pre;
 }
 div.verseblock > div.attribution {
   padding-top: 0.75em;
@@ -271,8 +258,8 @@ div.tableblock > table {
   border: 3px solid #527bbd;
 }
 thead, p.table.header {
+  font-family: sans-serif;
   font-weight: bold;
-  color: #527bbd;
 }
 tfoot {
   font-weight: bold;
@@ -352,14 +339,6 @@ span.footnote, span.footnoteref {
   min-width: 100px;
 }
 
-div.colist td {
-  padding-right: 0.5em;
-  padding-bottom: 0.3em;
-  vertical-align: top;
-}
-div.colist td img {
-  margin-top: 0.3em;
-}
 
 @media print {
   div#footer-badges { display: none; }
@@ -371,6 +350,7 @@ div#toc {
 
 div#toctitle {
   color: #527bbd;
+  font-family: sans-serif;
   font-size: 1.1em;
   font-weight: bold;
   margin-top: 1.0em;
@@ -393,43 +373,47 @@ div.toclevel4 {
   margin-left: 6em;
   font-size: 0.9em;
 }
+/* Workarounds for IE6's broken and incomplete CSS2. */
 
-span.aqua { color: aqua; }
-span.black { color: black; }
-span.blue { color: blue; }
-span.fuchsia { color: fuchsia; }
-span.gray { color: gray; }
-span.green { color: green; }
-span.lime { color: lime; }
-span.maroon { color: maroon; }
-span.navy { color: navy; }
-span.olive { color: olive; }
-span.purple { color: purple; }
-span.red { color: red; }
-span.silver { color: silver; }
-span.teal { color: teal; }
-span.white { color: white; }
-span.yellow { color: yellow; }
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
 
-span.aqua-background { background: aqua; }
-span.black-background { background: black; }
-span.blue-background { background: blue; }
-span.fuchsia-background { background: fuchsia; }
-span.gray-background { background: gray; }
-span.green-background { background: green; }
-span.lime-background { background: lime; }
-span.maroon-background { background: maroon; }
-span.navy-background { background: navy; }
-span.olive-background { background: olive; }
-span.purple-background { background: purple; }
-span.red-background { background: red; }
-span.silver-background { background: silver; }
-span.teal-background { background: teal; }
-span.white-background { background: white; }
-span.yellow-background { background: yellow; }
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
 
-span.big { font-size: 2em; }
-span.small { font-size: 0.6em; }
+div.quoteblock-attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock-content {
+  white-space: pre;
+}
+div.verseblock-attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+
+div.exampleblock-content {
+  border-left: 3px solid #dddddd;
+  padding-left: 0.5em;
+}
+
+/* IE6 sets dynamically generated links as visited. */
+div#toc a:visited { color: blue; }
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -565,7 +549,7 @@ footnotes: function () {
 /*]]>*/
 </script>
 </head>
-<body class="article">
+<body>
 <div id="header">
 <h1>antimake.mk(5)</h1>
 <div id="toc">
@@ -574,13 +558,10 @@ footnotes: function () {
 </div>
 </div>
 <div id="content">
-<div class="sect1">
 <h2 id="_name">NAME</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>antimake - Minimal Automake syntax on plain GNU Make</p></div>
 </div>
-</div>
-<div class="sect1">
 <h2 id="_description">DESCRIPTION</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Antimake makes possible to use GNU Automake conventions
@@ -589,8 +570,6 @@ to describe builds in ordinary Makefiles for GNU Make.</p></div>
 Target list describes target type and where to install.
 Target variables give source files and additional flags for build.</p></div>
 </div>
-</div>
-<div class="sect1">
 <h2 id="_example">EXAMPLE</h2>
 <div class="sectionbody">
 <div class="listingblock">
@@ -612,8 +591,6 @@ libutil_a_SOURCES = util.c util.h
 include antimake.mk</tt></pre>
 </div></div>
 </div>
-</div>
-<div class="sect1">
 <h2 id="_terminology">Terminology</h2>
 <div class="sectionbody">
 <div class="dlist"><dl>
@@ -654,8 +631,6 @@ Source
 </dd>
 </dl></div>
 </div>
-</div>
-<div class="sect1">
 <h2 id="_target_lists">TARGET LISTS</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Target lists are variables that contain file names that need to be
@@ -702,8 +677,7 @@ nobase_dist_doc_DATA = docs/README
 # dest: $(docdir)/docs
 # type: DATA</tt></pre>
 </div></div>
-<div class="sect2">
-<h3 id="_primaries">Primaries</h3>
+<h3 id="_primaries">Primaries</h3><div style="clear:left"></div>
 <div class="dlist"><dl>
 <dt class="hdlist1">
 <tt>PROGRAMS</tt>
@@ -762,9 +736,7 @@ nobase_dist_doc_DATA = docs/README
 </p>
 </dd>
 </dl></div>
-</div>
-<div class="sect2">
-<h3 id="_target_list_flags">Target list flags</h3>
+<h3 id="_target_list_flags">Target list flags</h3><div style="clear:left"></div>
 <div class="dlist"><dl>
 <dt class="hdlist1">
 <tt>dist</tt>
@@ -825,9 +797,6 @@ nobase_dist_doc_DATA = docs/README
 </dd>
 </dl></div>
 </div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="_target_variables">Target variables</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Only big targets take additional variables: <tt>PROGRAMS</tt>/<tt>LIBRARIES</tt>/<tt>LTLIBRARIES</tt>.</p></div>
@@ -913,8 +882,6 @@ prog_CFLAGS = $(GTK_CFLAGS)
 prog_LDADD = $(GTK_LIBS)</tt></pre>
 </div></div>
 </div>
-</div>
-<div class="sect1">
 <h2 id="_global_variables">Global variables</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>They can be set before <tt>antimake.mk</tt> inclusion to change
@@ -1004,8 +971,7 @@ USUAL_DIR
 </p>
 </dd>
 </dl></div>
-<div class="sect2">
-<h3 id="_more_details_on_embed_subdirs">More details on EMBED_SUBDIRS</h3>
+<h3 id="_more_details_on_embed_subdirs">More details on EMBED_SUBDIRS</h3><div style="clear:left"></div>
 <div class="paragraph"><p>It acts like <tt>include $(dir)/Makefile.am</tt> for each directory, except it converts
 file and variable names.  Example:</p></div>
 <div class="listingblock">
@@ -1025,9 +991,50 @@ src/Makefile.am:
 src_hello_SOURCES = src/main.c
 src_hello_CPPFLAGS = -I./src/include</tt></pre>
 </div></div>
-</div>
-<div class="sect2">
-<h3 id="_global_variables_for_current_location">Global variables for current location</h3>
+<div class="paragraph"><p>Variables, where file names are converted:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+SUBDIRS, DIST_SUBDIRS, EMBED_SUBDIRS
+</p>
+</li>
+<li>
+<p>
+DISTFILES, CLEANFILES, DISTCLEANFILES, MAINTAINERCLEANFILES
+</p>
+</li>
+<li>
+<p>
+target lists
+</p>
+</li>
+<li>
+<p>
+&lt;tgt&gt;_SOURCES, &lt;tgt&gt;_LDADD, &lt;tgt&gt;_LIBADD
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Variables, where -L and -I flags are converted:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+&lt;tgt&gt;_CFLAGS
+</p>
+</li>
+<li>
+<p>
+&lt;tgt&gt;_CPPFLAGS
+</p>
+</li>
+<li>
+<p>
+&lt;tgt&gt;_LDFLAGS
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Makefile should be written in a way that those conversions
+would be enough.</p></div>
+<h3 id="_global_variables_for_current_location">Global variables for current location</h3><div style="clear:left"></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1055,9 +1062,7 @@ nosub_top_srcdir, nosub_top_builddir - relative path from top of builddir to src
 </p>
 </li>
 </ul></div>
-</div>
-<div class="sect2">
-<h3 id="_global_variables_that_target_can_override">Global variables that target can override</h3>
+<h3 id="_global_variables_that_target_can_override">Global variables that target can override</h3><div style="clear:left"></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1090,9 +1095,7 @@ AM_MAKEFLAGS
 </p>
 </li>
 </ul></div>
-</div>
-<div class="sect2">
-<h3 id="_global_variables_from_autoconf">Global variables from autoconf</h3>
+<h3 id="_global_variables_from_autoconf">Global variables from autoconf</h3><div style="clear:left"></div>
 <div class="paragraph"><p>These variables come usually from autoconf,
 but also have reasonable defaults:</p></div>
 <div class="literalblock">
@@ -1101,9 +1104,7 @@ but also have reasonable defaults:</p></div>
 LIBTOOL, LIBTOOLFLAGS, AR, ARFLAGS, RANLIB,
 CXX, CXXFLAGS, INSTALL, MKDIR_P, LN_S</tt></pre>
 </div></div>
-</div>
-<div class="sect2">
-<h3 id="_global_variables_for_extending_antimake">Global variables for extending Antimake</h3>
+<h3 id="_global_variables_for_extending_antimake">Global variables for extending Antimake</h3><div style="clear:left"></div>
 <div class="dlist"><dl>
 <dt class="hdlist1">
 AM_DIST_DEFAULT
@@ -1150,9 +1151,7 @@ AM_LANGUAGES
 </p>
 </dd>
 </dl></div>
-</div>
-<div class="sect2">
-<h3 id="_variables_for_command_line_usage">Variables for command-line usage</h3>
+<h3 id="_variables_for_command_line_usage">Variables for command-line usage</h3><div style="clear:left"></div>
 <div class="dlist"><dl>
 <dt class="hdlist1">
 DESTDIR
@@ -1171,9 +1170,7 @@ AM_TRACE
 </p>
 </dd>
 </dl></div>
-</div>
-<div class="sect2">
-<h3 id="_hacking_variables">Hacking variables</h3>
+<h3 id="_hacking_variables">Hacking variables</h3><div style="clear:left"></div>
 <div class="dlist"><dl>
 <dt class="hdlist1">
 GNUMAKE380, GNUMAKE381, GNUMAKE382
@@ -1187,9 +1184,7 @@ GNUMAKE380, GNUMAKE381, GNUMAKE382
 </p>
 </dd>
 </dl></div>
-</div>
-<div class="sect2">
-<h3 id="_libtool_flags">Libtool flags</h3>
+<h3 id="_libtool_flags">Libtool flags</h3><div style="clear:left"></div>
 <div class="paragraph"><p>Useful <a href="http://www.gnu.org/software/libtool/manual/html_node/Link-mode.html">Libtool</a>
 flags that can be put int tgt_LDFLAGS for a LTLIBRARY:</p></div>
 <div class="ulist"><ul>
@@ -1238,20 +1233,13 @@ flags that can be put int tgt_LDFLAGS for a LTLIBRARY:</p></div>
 </li>
 </ul></div>
 </div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="_top_level_pseudo_targets">Top-level pseudo-targets</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_all">all</h3>
+<h3 id="_all">all</h3><div style="clear:left"></div>
 <div class="paragraph"><p>The default target when no other target is given on command-line.  Builds all target files.</p></div>
-<div class="sect3">
 <h4 id="_simple_targets">Simple targets</h4>
 <div class="paragraph"><p>These are simple - either the file already exists,
 or the user needs to give build command.</p></div>
-</div>
-<div class="sect3">
 <h4 id="_object_based_targets">Object-based targets</h4>
 <div class="paragraph"><p>The targets in primaries PROGRAMS, LIBRARIES and LTLIBRARIES consist of multiple source
 files that need to be compiled into objects.  Then the objects need to be
@@ -1286,10 +1274,7 @@ Final executable is linked.
 </p>
 </li>
 </ol></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install">install</h3>
+<h3 id="_install">install</h3><div style="clear:left"></div>
 <div class="paragraph"><p>Install all targets to their destination directories, which is mentioned
 in their target list variable name.  Eg.  <tt>bin_PROGRAMS</tt> will be installed
 to <tt>$(bindir)</tt>.   If destination is named <tt>noinst</tt>, it will not be installed.</p></div>
@@ -1308,9 +1293,7 @@ nobase_include_HEADERS = func1.h lib/func2.h
 #   $(includedir)/func1.h
 #   $(includedir)/lib/func2.h</tt></pre>
 </div></div>
-</div>
-<div class="sect2">
-<h3 id="_clean">clean</h3>
+<h3 id="_clean">clean</h3><div style="clear:left"></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1329,9 +1312,7 @@ Remove target files, unless they are marked as <tt>dist</tt>.
 </p>
 </li>
 </ul></div>
-</div>
-<div class="sect2">
-<h3 id="_distclean">distclean</h3>
+<h3 id="_distclean">distclean</h3><div style="clear:left"></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1344,9 +1325,7 @@ Remove sources tagged with <tt>nodist</tt>.  All sources as <tt>dist</tt> by def
 </p>
 </li>
 </ul></div>
-</div>
-<div class="sect2">
-<h3 id="_maintainer_clean">maintainer-clean</h3>
+<h3 id="_maintainer_clean">maintainer-clean</h3><div style="clear:left"></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1354,22 +1333,13 @@ Remove files in <tt>$(MAINTAINERCLEANFILES)</tt>
 </p>
 </li>
 </ul></div>
-</div>
-<div class="sect2">
-<h3 id="_help">help</h3>
+<h3 id="_help">help</h3><div style="clear:left"></div>
 <div class="paragraph"><p>Describe top-level targets.</p></div>
-</div>
-<div class="sect2">
-<h3 id="_am_test">am-test</h3>
+<h3 id="_am_test">am-test</h3><div style="clear:left"></div>
 <div class="paragraph"><p>Regression test for low-level Antimake functions.</p></div>
-</div>
-<div class="sect2">
-<h3 id="_am_debug">am-debug</h3>
+<h3 id="_am_debug">am-debug</h3><div style="clear:left"></div>
 <div class="paragraph"><p>Show Antimake internal state.</p></div>
 </div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="_features">FEATURES</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Done:</p></div>
@@ -1491,8 +1461,6 @@ automake nanny mode (gnu/gnits)
 </li>
 </ul></div>
 </div>
-</div>
-<div class="sect1">
 <h2 id="_see_also">SEE ALSO</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>GNU Make Reference: <a href="http://www.gnu.org/software/make/manual/make.html#Quick-Reference">http://www.gnu.org/software/make/manual/make.html#Quick-Reference</a></p></div>
@@ -1500,7 +1468,6 @@ automake nanny mode (gnu/gnits)
 <div class="paragraph"><p>Paul&#8217;s Rules of Makefiles: <a href="http://make.mad-scientist.us/rules.html">http://make.mad-scientist.us/rules.html</a></p></div>
 <div class="paragraph"><p>Small BSD-ish build system: <a href="https://webkeks.org/hg/buildsys/">https://webkeks.org/hg/buildsys/</a></p></div>
 <div class="paragraph"><p>GNU Make Standard Library: <a href="http://sourceforge.net/projects/gmsl/">http://sourceforge.net/projects/gmsl/</a></p></div>
-</div>
 </div>
 </div>
 <div id="footnotes"><hr /></div>
