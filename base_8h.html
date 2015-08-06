@@ -65,6 +65,18 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a9ca5b92699d239c7a1d4ef25d7dedd8b">PRIdZ</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">printf 'd' format specifier for ssize_t  <a href="#a9ca5b92699d239c7a1d4ef25d7dedd8b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a84a04f80221580593ab54e9bcca5db2a">PRIiZ</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">printf 'i' format specifier for ssize_t  <a href="#a84a04f80221580593ab54e9bcca5db2a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ac8e403f19239d8fc9bf5629d554ad451">PRIoZ</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">printf 'o' format specifier for size_t  <a href="#ac8e403f19239d8fc9bf5629d554ad451"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a10a0e43515357faefb134de078845955">PRIuZ</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">printf 'u' format specifier for size_t  <a href="#a10a0e43515357faefb134de078845955"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a6c395713c6fcd2a56d1586783c64045b">PRIxZ</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">printf 'x' format specifier for size_t  <a href="#a6c395713c6fcd2a56d1586783c64045b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a9065b05ee44fad130d5f380cf78afa98">PRIXZ</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">printf 'X' format specifier for size_t  <a href="#a9065b05ee44fad130d5f380cf78afa98"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a353187251a6359e206c4472fe66895ce">offsetof</a>(type, field)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">give offset of a field inside struct  <a href="#a353187251a6359e206c4472fe66895ce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a9811c6fb466ff1d04ff9052422edb9fe">container_of</a>(ptr, type, field)</td></tr>
@@ -77,6 +89,8 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">preferred alignment  <a href="#abe7f8cd9a0ce69b71567a3870415be66"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a7ea70ab8dbf5bc5414d9e2fa42867e53">ARRAY_NELEM</a>(a)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">number of elements in array  <a href="#a7ea70ab8dbf5bc5414d9e2fa42867e53"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a554634528df71d5c9fa7f21d8125653e">FLEX_ARRAY</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat helper to specify array with unknown length.  <a href="#a554634528df71d5c9fa7f21d8125653e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a18d295a837ac71add5578860b55e5502">STR</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make string token from C expression.  <a href="#a18d295a837ac71add5578860b55e5502"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a88fa737059e67b4b17ec980e5877361e">CONCAT</a>(a, b)</td></tr>
@@ -85,53 +99,154 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make single C token from 3 separate tokens.  <a href="#a868df059137332f71b6617da5f7d92b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#aa9b95fba4d265eae2e7883b47a5eac1f">CONCAT4</a>(a, b, c, d)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make single C token from 4 separate tokens.  <a href="#aa9b95fba4d265eae2e7883b47a5eac1f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a7d6e1cf1a8d53f38471e9e9db3faf740">__func__</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-processor macro for current function name.  <a href="#a7d6e1cf1a8d53f38471e9e9db3faf740"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a25b4da9c1f0b06ff0b92509c874234a1">static_assert</a>(expr, msg)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile-time assert.  <a href="#a25b4da9c1f0b06ff0b92509c874234a1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#acdf2afba684c45e4dd5775b371a36412">Assert</a>(e)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">assert() that uses &lt;usual/logging&gt; module  <a href="#acdf2afba684c45e4dd5775b371a36412"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#affb9fc32698fab7f7b36e0cf8e64c83e">free</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: make <a class="el" href="base_8h.html#affb9fc32698fab7f7b36e0cf8e64c83e" title="Compat: make free() accept const pointer.">free()</a> accept const pointer.  <a href="#affb9fc32698fab7f7b36e0cf8e64c83e"></a><br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Compiler attributes.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af816d6122f71a567d437dec36be49892"></a><!-- doxytag: member="base.h::_COMPILER_GNUC" ref="af816d6122f71a567d437dec36be49892" args="(maj, min)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_COMPILER_GNUC</b>(maj, min)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a7eda00f1adc3604c819e0ac076b2cb"></a><!-- doxytag: member="base.h::_COMPILER_CLANG" ref="a0a7eda00f1adc3604c819e0ac076b2cb" args="(maj, min)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_COMPILER_CLANG</b>(maj, min)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a88216871a7d97bd831ecace4833808"></a><!-- doxytag: member="base.h::_COMPILER_MSC" ref="a3a88216871a7d97bd831ecace4833808" args="(ver)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_COMPILER_MSC</b>(ver)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab010d44820ad07e2e473c5612091cb77"></a><!-- doxytag: member="base.h::_COMPILER_ICC" ref="ab010d44820ad07e2e473c5612091cb77" args="(ver)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_COMPILER_ICC</b>(ver)</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Compiler checks, mainly for internal usage.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#af816d6122f71a567d437dec36be49892">_COMPILER_GNUC</a>(maj, min)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-processor macro to check if compiler is GCC with high enough version.  <a href="#af816d6122f71a567d437dec36be49892"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a0a7eda00f1adc3604c819e0ac076b2cb">_COMPILER_CLANG</a>(maj, min)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-processor macro to check if compiler is CLANG with high enough version.  <a href="#a0a7eda00f1adc3604c819e0ac076b2cb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a3a88216871a7d97bd831ecace4833808">_COMPILER_MSC</a>(ver)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-processor macro to check if compiler is Visual C with high enough version.  <a href="#a3a88216871a7d97bd831ecace4833808"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ab010d44820ad07e2e473c5612091cb77">_COMPILER_ICC</a>(ver)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-processor macro to check if compiler is Intel CC with high enough version.  <a href="#ab010d44820ad07e2e473c5612091cb77"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a447121dcab4275b7839a56082b7a1ab8"></a><!-- doxytag: member="base.h::__has_builtin" ref="a447121dcab4275b7839a56082b7a1ab8" args="(x)" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__has_builtin</b>(x)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af989845e24678c452b9222afdac95e7f"></a><!-- doxytag: member="base.h::__has_feature" ref="af989845e24678c452b9222afdac95e7f" args="(x)" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__has_feature</b>(x)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1ce1a4353334dd8968a94a98b4bf1dd"></a><!-- doxytag: member="base.h::__has_extension" ref="ae1ce1a4353334dd8968a94a98b4bf1dd" args="(x)" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__has_extension</b>(x)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54d2d7742701f3f112afbcd8d4f9ccdb"></a><!-- doxytag: member="base.h::__has_attribute" ref="a54d2d7742701f3f112afbcd8d4f9ccdb" args="(x)" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__has_attribute</b>(x)</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Function/struct attributes.</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#aa1ed035ac46973db2babb746c8ebc06a">_PACKED</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable padding for structure.  <a href="#aa1ed035ac46973db2babb746c8ebc06a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d6e1cf1a8d53f38471e9e9db3faf740"></a><!-- doxytag: member="base.h::__func__" ref="a7d6e1cf1a8d53f38471e9e9db3faf740" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>__func__</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85cd253c2de3e111bd2986b324488888"></a><!-- doxytag: member="base.h::_MUSTCHECK" ref="a85cd253c2de3e111bd2986b324488888" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_MUSTCHECK</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a598b2b5ba1091e85999734dd57735330"></a><!-- doxytag: member="base.h::_DEPRECATED" ref="a598b2b5ba1091e85999734dd57735330" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_DEPRECATED</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28b638bc7250e2a7bbebb642505da2fa"></a><!-- doxytag: member="base.h::_PRINTF" ref="a28b638bc7250e2a7bbebb642505da2fa" args="(x, y)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_PRINTF</b>(x, y)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22fd9d63dbf9630853796b840c0331d7"></a><!-- doxytag: member="base.h::_MALLOC" ref="a22fd9d63dbf9630853796b840c0331d7" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_MALLOC</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44145f6f9805df57da735ea6ac0f1dbb"></a><!-- doxytag: member="base.h::_UNUSED" ref="a44145f6f9805df57da735ea6ac0f1dbb" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_UNUSED</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a804b8d1e6a7a6d386242283146497cea"></a><!-- doxytag: member="base.h::_NOINLINE" ref="a804b8d1e6a7a6d386242283146497cea" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_NOINLINE</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ebbdde0cd7d0cda5162a45fa973d403"></a><!-- doxytag: member="base.h::_NORETURN" ref="a3ebbdde0cd7d0cda5162a45fa973d403" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_NORETURN</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6c45889010c1bd68631771b64f18101"></a><!-- doxytag: member="base.h::unlikely" ref="ac6c45889010c1bd68631771b64f18101" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>unlikely</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a217a0bd562b98ae8c2ffce44935351e1"></a><!-- doxytag: member="base.h::likely" ref="a217a0bd562b98ae8c2ffce44935351e1" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>likely</b>(x)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a85cd253c2de3e111bd2986b324488888">_MUSTCHECK</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Show warning if function result is not used.  <a href="#a85cd253c2de3e111bd2986b324488888"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a598b2b5ba1091e85999734dd57735330">_DEPRECATED</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Show warning if used.  <a href="#a598b2b5ba1091e85999734dd57735330"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a2e9b7feeab22d048d275916bb639655c">_PRINTF</a>(fmtpos, argpos)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check printf-style format and arg sanity.  <a href="#a2e9b7feeab22d048d275916bb639655c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a22fd9d63dbf9630853796b840c0331d7">_MALLOC</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returns new pointer.  <a href="#a22fd9d63dbf9630853796b840c0331d7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a44145f6f9805df57da735ea6ac0f1dbb">_UNUSED</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable 'unused' warning for function/argument.  <a href="#a44145f6f9805df57da735ea6ac0f1dbb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a804b8d1e6a7a6d386242283146497cea">_NOINLINE</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not inline function.  <a href="#a804b8d1e6a7a6d386242283146497cea"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a3ebbdde0cd7d0cda5162a45fa973d403">_NORETURN</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that function never returns.  <a href="#a3ebbdde0cd7d0cda5162a45fa973d403"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hint for compiler that expression (x) is likely to be true.  <a href="#a217a0bd562b98ae8c2ffce44935351e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hint for compiler that expression (x) is likely to be false.  <a href="#ac6c45889010c1bd68631771b64f18101"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static _MUSTCHECK void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ac644b3fdd5b6d1254f7dbe6e2f12f99c">zmalloc</a> (size_t len)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a85cd253c2de3e111bd2986b324488888">_MUSTCHECK</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ac644b3fdd5b6d1254f7dbe6e2f12f99c">zmalloc</a> (size_t len)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeroing malloc.  <a href="#ac644b3fdd5b6d1254f7dbe6e2f12f99c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#af981c3e91792ea207d8220b67f7752da">posix_memalign</a> (void **ptr_p, size_t align, size_t len)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: <a class="el" href="base_8h.html#af981c3e91792ea207d8220b67f7752da" title="Compat: posix_memalign()">posix_memalign()</a>  <a href="#af981c3e91792ea207d8220b67f7752da"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a17159bc5270e9478c9b2d905619a5e60">reallocarray</a> (void *p, size_t count, size_t size)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as realloc(), but safely calculates total size.  <a href="#a17159bc5270e9478c9b2d905619a5e60"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Basic C environment. </p>
 </div><hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a9ca5b92699d239c7a1d4ef25d7dedd8b"></a><!-- doxytag: member="base.h::PRIdZ" ref="a9ca5b92699d239c7a1d4ef25d7dedd8b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a9ca5b92699d239c7a1d4ef25d7dedd8b">PRIdZ</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>printf 'd' format specifier for ssize_t </p>
+
+</div>
+</div>
+<a class="anchor" id="a84a04f80221580593ab54e9bcca5db2a"></a><!-- doxytag: member="base.h::PRIiZ" ref="a84a04f80221580593ab54e9bcca5db2a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a84a04f80221580593ab54e9bcca5db2a">PRIiZ</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>printf 'i' format specifier for ssize_t </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8e403f19239d8fc9bf5629d554ad451"></a><!-- doxytag: member="base.h::PRIoZ" ref="ac8e403f19239d8fc9bf5629d554ad451" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#ac8e403f19239d8fc9bf5629d554ad451">PRIoZ</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>printf 'o' format specifier for size_t </p>
+
+</div>
+</div>
+<a class="anchor" id="a10a0e43515357faefb134de078845955"></a><!-- doxytag: member="base.h::PRIuZ" ref="a10a0e43515357faefb134de078845955" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a10a0e43515357faefb134de078845955">PRIuZ</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>printf 'u' format specifier for size_t </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c395713c6fcd2a56d1586783c64045b"></a><!-- doxytag: member="base.h::PRIxZ" ref="a6c395713c6fcd2a56d1586783c64045b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a6c395713c6fcd2a56d1586783c64045b">PRIxZ</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>printf 'x' format specifier for size_t </p>
+
+</div>
+</div>
+<a class="anchor" id="a9065b05ee44fad130d5f380cf78afa98"></a><!-- doxytag: member="base.h::PRIXZ" ref="a9065b05ee44fad130d5f380cf78afa98" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a9065b05ee44fad130d5f380cf78afa98">PRIXZ</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>printf 'X' format specifier for size_t </p>
+
+</div>
+</div>
 <a class="anchor" id="a353187251a6359e206c4472fe66895ce"></a><!-- doxytag: member="base.h::offsetof" ref="a353187251a6359e206c4472fe66895ce" args="(type, field)" -->
 <div class="memitem">
 <div class="memproto">
@@ -284,6 +399,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a554634528df71d5c9fa7f21d8125653e"></a><!-- doxytag: member="base.h::FLEX_ARRAY" ref="a554634528df71d5c9fa7f21d8125653e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a554634528df71d5c9fa7f21d8125653e">FLEX_ARRAY</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Compat helper to specify array with unknown length. </p>
+<p>Usage:</p>
+<div class="fragment"><pre class="fragment"> <span class="keywordtype">char</span> flex_string[<a class="code" href="base_8h.html#a554634528df71d5c9fa7f21d8125653e" title="Compat helper to specify array with unknown length.">FLEX_ARRAY</a>];
+</pre></div> 
+</div>
+</div>
 <a class="anchor" id="a18d295a837ac71add5578860b55e5502"></a><!-- doxytag: member="base.h::STR" ref="a18d295a837ac71add5578860b55e5502" args="(x)" -->
 <div class="memitem">
 <div class="memproto">
@@ -408,6 +540,117 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7d6e1cf1a8d53f38471e9e9db3faf740"></a><!-- doxytag: member="base.h::__func__" ref="a7d6e1cf1a8d53f38471e9e9db3faf740" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a7d6e1cf1a8d53f38471e9e9db3faf740">__func__</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pre-processor macro for current function name. </p>
+
+</div>
+</div>
+<a class="anchor" id="af816d6122f71a567d437dec36be49892"></a><!-- doxytag: member="base.h::_COMPILER_GNUC" ref="af816d6122f71a567d437dec36be49892" args="(maj, min)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#af816d6122f71a567d437dec36be49892">_COMPILER_GNUC</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">maj, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">min&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pre-processor macro to check if compiler is GCC with high enough version. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0a7eda00f1adc3604c819e0ac076b2cb"></a><!-- doxytag: member="base.h::_COMPILER_CLANG" ref="a0a7eda00f1adc3604c819e0ac076b2cb" args="(maj, min)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a0a7eda00f1adc3604c819e0ac076b2cb">_COMPILER_CLANG</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">maj, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">min&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pre-processor macro to check if compiler is CLANG with high enough version. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a88216871a7d97bd831ecace4833808"></a><!-- doxytag: member="base.h::_COMPILER_MSC" ref="a3a88216871a7d97bd831ecace4833808" args="(ver)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a3a88216871a7d97bd831ecace4833808">_COMPILER_MSC</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ver</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pre-processor macro to check if compiler is Visual C with high enough version. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab010d44820ad07e2e473c5612091cb77"></a><!-- doxytag: member="base.h::_COMPILER_ICC" ref="ab010d44820ad07e2e473c5612091cb77" args="(ver)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#ab010d44820ad07e2e473c5612091cb77">_COMPILER_ICC</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ver</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pre-processor macro to check if compiler is Intel CC with high enough version. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa1ed035ac46973db2babb746c8ebc06a"></a><!-- doxytag: member="base.h::_PACKED" ref="aa1ed035ac46973db2babb746c8ebc06a" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -420,6 +663,163 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Disable padding for structure. </p>
+
+</div>
+</div>
+<a class="anchor" id="a85cd253c2de3e111bd2986b324488888"></a><!-- doxytag: member="base.h::_MUSTCHECK" ref="a85cd253c2de3e111bd2986b324488888" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a85cd253c2de3e111bd2986b324488888">_MUSTCHECK</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Show warning if function result is not used. </p>
+
+</div>
+</div>
+<a class="anchor" id="a598b2b5ba1091e85999734dd57735330"></a><!-- doxytag: member="base.h::_DEPRECATED" ref="a598b2b5ba1091e85999734dd57735330" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a598b2b5ba1091e85999734dd57735330">_DEPRECATED</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Show warning if used. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e9b7feeab22d048d275916bb639655c"></a><!-- doxytag: member="base.h::_PRINTF" ref="a2e9b7feeab22d048d275916bb639655c" args="(fmtpos, argpos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a2e9b7feeab22d048d275916bb639655c">_PRINTF</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmtpos, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">argpos&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check printf-style format and arg sanity. </p>
+
+</div>
+</div>
+<a class="anchor" id="a22fd9d63dbf9630853796b840c0331d7"></a><!-- doxytag: member="base.h::_MALLOC" ref="a22fd9d63dbf9630853796b840c0331d7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a22fd9d63dbf9630853796b840c0331d7">_MALLOC</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Function returns new pointer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a44145f6f9805df57da735ea6ac0f1dbb"></a><!-- doxytag: member="base.h::_UNUSED" ref="a44145f6f9805df57da735ea6ac0f1dbb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a44145f6f9805df57da735ea6ac0f1dbb">_UNUSED</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Disable 'unused' warning for function/argument. </p>
+
+</div>
+</div>
+<a class="anchor" id="a804b8d1e6a7a6d386242283146497cea"></a><!-- doxytag: member="base.h::_NOINLINE" ref="a804b8d1e6a7a6d386242283146497cea" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a804b8d1e6a7a6d386242283146497cea">_NOINLINE</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Do not inline function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ebbdde0cd7d0cda5162a45fa973d403"></a><!-- doxytag: member="base.h::_NORETURN" ref="a3ebbdde0cd7d0cda5162a45fa973d403" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a3ebbdde0cd7d0cda5162a45fa973d403">_NORETURN</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indicates that function never returns. </p>
+
+</div>
+</div>
+<a class="anchor" id="a217a0bd562b98ae8c2ffce44935351e1"></a><!-- doxytag: member="base.h::likely" ref="a217a0bd562b98ae8c2ffce44935351e1" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Hint for compiler that expression (x) is likely to be true. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6c45889010c1bd68631771b64f18101"></a><!-- doxytag: member="base.h::unlikely" ref="ac6c45889010c1bd68631771b64f18101" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="base_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Hint for compiler that expression (x) is likely to be false. </p>
 
 </div>
 </div>
@@ -500,7 +900,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static _MUSTCHECK void* <a class="el" href="base_8h.html#ac644b3fdd5b6d1254f7dbe6e2f12f99c">zmalloc</a> </td>
+          <td class="memname">static <a class="el" href="base_8h.html#a85cd253c2de3e111bd2986b324488888">_MUSTCHECK</a> void* <a class="el" href="base_8h.html#ac644b3fdd5b6d1254f7dbe6e2f12f99c">zmalloc</a> </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>len</em></td><td>)</td>
@@ -546,6 +946,41 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Compat: <a class="el" href="base_8h.html#af981c3e91792ea207d8220b67f7752da" title="Compat: posix_memalign()">posix_memalign()</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a17159bc5270e9478c9b2d905619a5e60"></a><!-- doxytag: member="base.h::reallocarray" ref="a17159bc5270e9478c9b2d905619a5e60" args="(void *p, size_t count, size_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* <a class="el" href="base_8h.html#a17159bc5270e9478c9b2d905619a5e60">reallocarray</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Same as realloc(), but safely calculates total size. </p>
 
 </div>
 </div>

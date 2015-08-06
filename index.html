@@ -101,6 +101,8 @@ Module list.</h2>
 <tr>
 <td>&lt;<a class="el" href="fnmatch_8h.html" title="Theme include for strings.">usual/fnmatch.h</a>&gt; </td><td>fnmatch compat  </td></tr>
 <tr>
+<td>&lt;usual/wchar.h&gt; </td><td>wchar compat  </td></tr>
+<tr>
 <th colspan="2">Data Structures  </th></tr>
 <tr>
 <td>&lt;<a class="el" href="aatree_8h.html" title="AA-Tree - Binary tree with embeddable nodes.">usual/aatree.h</a>&gt; </td><td>Binary Tree  </td></tr>
@@ -127,15 +129,15 @@ Module list.</h2>
 <tr>
 <td>&lt;<a class="el" href="bits_8h.html" title="Bit arithmetics.">usual/bits.h</a>&gt; </td><td>Bit arithmetic  </td></tr>
 <tr>
+<td>&lt;<a class="el" href="bytemap_8h.html" title="Map 256 byte values to bit or int.">usual/bytemap.h</a>&gt; </td><td>Byte processing  </td></tr>
+<tr>
 <td>&lt;<a class="el" href="cfparser_8h.html" title="Config file parser.">usual/cfparser.h</a>&gt; </td><td>Config parser  </td></tr>
 <tr>
-<td>&lt;usual/crc32.h&gt; </td><td>CRC32  </td></tr>
-<tr>
-<td>&lt;<a class="el" href="endian_8h.html" title="Endianess conversion macros.">usual/endian.h</a>&gt; </td><td>Endianess conversion  </td></tr>
-<tr>
-<td>&lt;usual/lookup3.h&gt; </td><td>Jenkins' lookup3 hash  </td></tr>
+<td>&lt;<a class="el" href="endian_8h.html" title="Endianess conversion, convert integers to bytes.">usual/endian.h</a>&gt; </td><td>Endianess conversion  </td></tr>
 <tr>
 <td>&lt;<a class="el" href="misc_8h.html" title="Random stuff that does not fit elsewhere.">usual/misc.h</a>&gt; </td><td>Misc arithmetic  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="json_8h.html" title="Read and write JSON.">usual/json.h</a>&gt; </td><td>Read/write JSON  </td></tr>
 <tr>
 <td>&lt;<a class="el" href="regex_8h.html" title="POSIX regular expession API, provided by either libc or internally.">usual/regex.h</a>&gt; </td><td>POSIX regex compat  </td></tr>
 <tr>
@@ -143,7 +145,23 @@ Module list.</h2>
 <tr>
 <td>&lt;<a class="el" href="utf8_8h.html" title="Low-level UTF8 handling.">usual/utf8.h</a>&gt; </td><td>Low-level UTF8 handling  </td></tr>
 <tr>
+<th colspan="2">Non-cryptographic hashing  </th></tr>
+<tr>
+<td>&lt;<a class="el" href="crc32_8h.html" title="CRC32 checksum.">usual/hashing/crc32.h</a>&gt; </td><td>CRC32  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="lookup3_8h.html" title="Jenkins&#39; lookup3 non-cryptographic hash.">usual/hashing/lookup3.h</a>&gt; </td><td>Jenkins' lookup3 hash  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="siphash_8h.html" title="SipHash-2-4.">usual/hashing/siphash.h</a>&gt; </td><td>Siphash  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="memhash_8h.html" title="Randomized in-memory hashing.">usual/hashing/memhash.h</a>&gt; </td><td>In-memory randomized hashing  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="spooky_8h.html" title="Jenkins SpookyHash V2 - fast hash for 64-bit CPUs.">usual/hashing/spooky.h</a>&gt; </td><td>Jenkins' SpookyHash for 64-bit CPUs  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="xxhash_8h.html" title="xxHash - fast hash for 32-bit cpu&#39;s.">usual/hashing/xxhash.h</a>&gt; </td><td>Fast hash for 32-bit CPUs  </td></tr>
+<tr>
 <th colspan="2">Cryptography  </th></tr>
+<tr>
+<td>&lt;<a class="el" href="csrandom_8h.html" title="Cryptographically Secure Randomness.">usual/crypto/csrandom.h</a>&gt; </td><td>Cryptographically Secure Randomness  </td></tr>
 <tr>
 <td>&lt;<a class="el" href="digest_8h.html" title="Common API for cryptographic digests.">usual/crypto/digest.h</a>&gt; </td><td>Common API for cryptographic message digests  </td></tr>
 <tr>
@@ -153,11 +171,19 @@ Module list.</h2>
 <tr>
 <td>&lt;<a class="el" href="sha1_8h.html" title="SHA1 implementation.">usual/crypto/sha1.h</a>&gt; </td><td>SHA1 hash  </td></tr>
 <tr>
-<td>&lt;usual/crypto/sha256.h&gt; </td><td>SHA256/224 hashes  </td></tr>
+<td>&lt;<a class="el" href="sha256_8h.html" title="SHA256 and SHA224 cryptographic hashes.">usual/crypto/sha256.h</a>&gt; </td><td>SHA256/224 hashes  </td></tr>
 <tr>
-<td>&lt;usual/crypto/sha512.h&gt; </td><td>SHA512/384 hashes  </td></tr>
+<td>&lt;<a class="el" href="sha512_8h.html" title="SHA512 and SHA384 cryptographic hashes.">usual/crypto/sha512.h</a>&gt; </td><td>SHA512/384 hashes  </td></tr>
 <tr>
-<td>&lt;<a class="el" href="keccak_8h.html" title="Keccak with SHA3 parameters.">usual/crypto/keccak.h</a>&gt; </td><td>Keccak/SHA3 hashes  </td></tr>
+<td>&lt;<a class="el" href="sha3_8h.html" title="SHA3 variants of Keccak.">usual/crypto/sha3.h</a>&gt; </td><td>SHA3/SHAKE hashes  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="keccak_8h.html" title="Simple API to Keccak1600 permutation + sponge.">usual/crypto/keccak.h</a>&gt; </td><td>Keccak sponge API  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="keccak__prng_8h.html" title="Implements PRNG mode for Keccak sponge function.">usual/crypto/keccak_prng.h</a>&gt; </td><td>PRNG based on Keccak  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="entropy_8h.html" title="Load entropy from OS.">usual/crypto/entropy.h</a>&gt; </td><td>Entropy collector  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="chacha_8h.html" title="ChaCha cipher.">usual/crypto/chacha.h</a>&gt; </td><td><a class="el" href="struct_cha_cha.html" title="ChaCha state.">ChaCha</a> cipher  </td></tr>
 <tr>
 <th colspan="2">Memory Allocation  </th></tr>
 <tr>
@@ -168,6 +194,8 @@ Module list.</h2>
 <td>&lt;<a class="el" href="mempool_8h.html" title="Simple memory pool for variable-length allocations.">usual/mempool.h</a>&gt; </td><td>Simple append-only memory pool  </td></tr>
 <tr>
 <td>&lt;<a class="el" href="slab_8h.html" title="Slab allocator for same-size objects.">usual/slab.h</a>&gt; </td><td>Slab allocator for same-size objects  </td></tr>
+<tr>
+<td>&lt;<a class="el" href="talloc_8h.html" title="Talloc - hierarchical memory allocator.">usual/talloc.h</a>&gt; </td><td>Hierarchical allocator  </td></tr>
 <tr>
 <th colspan="2">OS support  </th></tr>
 <tr>

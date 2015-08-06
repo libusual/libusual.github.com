@@ -65,8 +65,8 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_cx_mem.html">CxMem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxextra_8h.html#afeaab469c661982b62de41812293494e">cx_new_pool</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *parent)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates allocator that pools all memory together, without keeping track of single objects, to be freed all together in one shot.  <a href="#afeaab469c661982b62de41812293494e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_cx_mem.html">CxMem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxextra_8h.html#a2fb98434154b3eae3240faca232bf17b">cx_new_pool</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *parent, size_t initial_size, unsigned int align)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates allocator that pools all memory together, without keeping track of single objects, to be freed all together in one shot.  <a href="#a2fb98434154b3eae3240faca232bf17b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_cx_mem.html">CxMem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxextra_8h.html#a136d196cc71003b689136a489140fe3a">cx_new_tree</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *parent)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates allocator that remebers all allocations done under it and allows all of it to be freed together.  <a href="#a136d196cc71003b689136a489140fe3a"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
@@ -79,16 +79,32 @@ Variables</h2></td></tr>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Extra allocators for cxalloc. </p>
 </div><hr/><h2>Function Documentation</h2>
-<a class="anchor" id="afeaab469c661982b62de41812293494e"></a><!-- doxytag: member="cxextra.h::cx_new_pool" ref="afeaab469c661982b62de41812293494e" args="(CxMem *parent)" -->
+<a class="anchor" id="a2fb98434154b3eae3240faca232bf17b"></a><!-- doxytag: member="cxextra.h::cx_new_pool" ref="a2fb98434154b3eae3240faca232bf17b" args="(CxMem *parent, size_t initial_size, unsigned int align)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_cx_mem.html">CxMem</a>* <a class="el" href="cxextra_8h.html#afeaab469c661982b62de41812293494e">cx_new_pool</a> </td>
+          <td class="memname"><a class="el" href="struct_cx_mem.html">CxMem</a>* <a class="el" href="cxextra_8h.html#a2fb98434154b3eae3240faca232bf17b">cx_new_pool</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_cx_mem.html">CxMem</a> *&#160;</td>
-          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>initial_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>align</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>

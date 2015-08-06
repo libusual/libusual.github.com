@@ -72,6 +72,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return UTF8 seq length based on unicode codepoint.  <a href="#a70ad21f3239a0cd09dc7373c7cd4ab19"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utf8_8h.html#a6019308a94993e901fc81bb9d671981a">utf8_seq_size</a> (unsigned char c)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return UTF8 seq length based on first byte.  <a href="#a6019308a94993e901fc81bb9d671981a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utf8_8h.html#a02b1b03d6b4826e5885a73802366c7aa">utf8_validate_seq</a> (const char *src, const char *srcend)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return sequence length if all bytes are valid, 0 otherwise.  <a href="#a02b1b03d6b4826e5885a73802366c7aa"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Low-level UTF8 handling. </p>
@@ -194,6 +196,35 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Return UTF8 seq length based on first byte. </p>
+
+</div>
+</div>
+<a class="anchor" id="a02b1b03d6b4826e5885a73802366c7aa"></a><!-- doxytag: member="utf8.h::utf8_validate_seq" ref="a02b1b03d6b4826e5885a73802366c7aa" args="(const char *src, const char *srcend)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="utf8_8h.html#a02b1b03d6b4826e5885a73802366c7aa">utf8_validate_seq</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>srcend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return sequence length if all bytes are valid, 0 otherwise. </p>
 
 </div>
 </div>

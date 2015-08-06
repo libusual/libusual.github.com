@@ -77,7 +77,7 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default allocator.  <a href="#a8a6c053d864ac69b50e8c7a1261185a3"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a00464a17f0508eaa0725cc3e68279bbd">cx_alloc</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, size_t len) _MALLOC</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a00464a17f0508eaa0725cc3e68279bbd">cx_alloc</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, size_t len) <a class="el" href="base_8h.html#a22fd9d63dbf9630853796b840c0331d7">_MALLOC</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory from context.  <a href="#a00464a17f0508eaa0725cc3e68279bbd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a3c32954870a41abe91e418fae4f302e9">cx_realloc</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, void *ptr, size_t len)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Change existing allocation.  <a href="#a3c32954870a41abe91e418fae4f302e9"></a><br/></td></tr>
@@ -85,16 +85,24 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Free existing allocation.  <a href="#a4f164c826ae312bbf68fc784066db6ac"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a737f74c6108b4b677bd46816c0685615">cx_destroy</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all memory allocated in context.  <a href="#a737f74c6108b4b677bd46816c0685615"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#aba9810d5b22aedfda47bb5cb89a7a7e9">cx_alloc0</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, size_t len) _MALLOC</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#aba9810d5b22aedfda47bb5cb89a7a7e9">cx_alloc0</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, size_t len) <a class="el" href="base_8h.html#a22fd9d63dbf9630853796b840c0331d7">_MALLOC</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and zero-fill memory.  <a href="#aba9810d5b22aedfda47bb5cb89a7a7e9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a2284021873a115941bf2f559c533c6ee">cx_memdup</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, const void *src, size_t len) _MALLOC</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a2284021873a115941bf2f559c533c6ee">cx_memdup</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, const void *src, size_t len) <a class="el" href="base_8h.html#a22fd9d63dbf9630853796b840c0331d7">_MALLOC</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and copy.  <a href="#a2284021873a115941bf2f559c533c6ee"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a9cdac2f8bbe6b4ee11d062fd2a567ada">cx_strdup</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, const char *str) _MALLOC</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a9cdac2f8bbe6b4ee11d062fd2a567ada">cx_strdup</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, const char *str) <a class="el" href="base_8h.html#a22fd9d63dbf9630853796b840c0331d7">_MALLOC</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and copy string.  <a href="#a9cdac2f8bbe6b4ee11d062fd2a567ada"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a44473083896da7f91cdb3d8f504b5b04">cx_asprintf</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, char **dst_p, const char *fmt,...) <a class="el" href="base_8h.html#a2e9b7feeab22d048d275916bb639655c">_PRINTF</a>(3</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to allocated string, return length or -1 on error.  <a href="#a44473083896da7f91cdb3d8f504b5b04"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#ad9fd5bfdbbbb5a1615c39854f38f4414">cx_vasprintf</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, char **dst_p, const char *fmt, va_list ap) <a class="el" href="base_8h.html#a2e9b7feeab22d048d275916bb639655c">_PRINTF</a>(3</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to allocated string, return length or -1 on error.  <a href="#ad9fd5bfdbbbb5a1615c39854f38f4414"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int int char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a14dd9dd8f24d2990118f584fb6cc85e7">cx_sprintf</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, const char *fmt,...) <a class="el" href="base_8h.html#a2e9b7feeab22d048d275916bb639655c">_PRINTF</a>(2</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to allocated string, return new string or NULL on error.  <a href="#a14dd9dd8f24d2990118f584fb6cc85e7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int int char char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a173b4daa1a4dd7635b40a92f8261beee">cx_vsprintf</a> (<a class="el" href="struct_cx_mem.html">CxMem</a> *cx, const char *fmt, va_list ap) <a class="el" href="base_8h.html#a2e9b7feeab22d048d275916bb639655c">_PRINTF</a>(2</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to allocated string, return new string or NULL on error.  <a href="#a173b4daa1a4dd7635b40a92f8261beee"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_cx_mem.html">CxMem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a969cb1cfc78322076f54cc3a250b6dfb">cx_libc_allocator</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocator that uses libc malloc/realloc/free.  <a href="#a969cb1cfc78322076f54cc3a250b6dfb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int int char char <a class="el" href="struct_cx_mem.html">CxMem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cxalloc_8h.html#a6e22cd08a204a3a015d85c261ba5bd32">cx_libc_allocator</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocator that uses libc malloc/realloc/free.  <a href="#a6e22cd08a204a3a015d85c261ba5bd32"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Context-based Memory Allocator. </p>
@@ -340,13 +348,165 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Variable Documentation</h2>
-<a class="anchor" id="a969cb1cfc78322076f54cc3a250b6dfb"></a><!-- doxytag: member="cxalloc.h::cx_libc_allocator" ref="a969cb1cfc78322076f54cc3a250b6dfb" args="" -->
+<a class="anchor" id="a44473083896da7f91cdb3d8f504b5b04"></a><!-- doxytag: member="cxalloc.h::cx_asprintf" ref="a44473083896da7f91cdb3d8f504b5b04" args="(CxMem *cx, char **dst_p, const char *fmt,...) _PRINTF(3" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_cx_mem.html">CxMem</a> <a class="el" href="cxalloc_8h.html#a969cb1cfc78322076f54cc3a250b6dfb">cx_libc_allocator</a></td>
+          <td class="memname">int <a class="el" href="cxalloc_8h.html#a44473083896da7f91cdb3d8f504b5b04">cx_asprintf</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_cx_mem.html">CxMem</a> *&#160;</td>
+          <td class="paramname"><em>cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>dst_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Print to allocated string, return length or -1 on error. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad9fd5bfdbbbb5a1615c39854f38f4414"></a><!-- doxytag: member="cxalloc.h::cx_vasprintf" ref="ad9fd5bfdbbbb5a1615c39854f38f4414" args="(CxMem *cx, char **dst_p, const char *fmt, va_list ap) _PRINTF(3" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int int <a class="el" href="cxalloc_8h.html#ad9fd5bfdbbbb5a1615c39854f38f4414">cx_vasprintf</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_cx_mem.html">CxMem</a> *&#160;</td>
+          <td class="paramname"><em>cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>dst_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>ap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Print to allocated string, return length or -1 on error. </p>
+
+</div>
+</div>
+<a class="anchor" id="a14dd9dd8f24d2990118f584fb6cc85e7"></a><!-- doxytag: member="cxalloc.h::cx_sprintf" ref="a14dd9dd8f24d2990118f584fb6cc85e7" args="(CxMem *cx, const char *fmt,...) _PRINTF(2" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int int char* <a class="el" href="cxalloc_8h.html#a14dd9dd8f24d2990118f584fb6cc85e7">cx_sprintf</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_cx_mem.html">CxMem</a> *&#160;</td>
+          <td class="paramname"><em>cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Print to allocated string, return new string or NULL on error. </p>
+
+</div>
+</div>
+<a class="anchor" id="a173b4daa1a4dd7635b40a92f8261beee"></a><!-- doxytag: member="cxalloc.h::cx_vsprintf" ref="a173b4daa1a4dd7635b40a92f8261beee" args="(CxMem *cx, const char *fmt, va_list ap) _PRINTF(2" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int int char char* <a class="el" href="cxalloc_8h.html#a173b4daa1a4dd7635b40a92f8261beee">cx_vsprintf</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_cx_mem.html">CxMem</a> *&#160;</td>
+          <td class="paramname"><em>cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>ap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Print to allocated string, return new string or NULL on error. </p>
+
+</div>
+</div>
+<hr/><h2>Variable Documentation</h2>
+<a class="anchor" id="a6e22cd08a204a3a015d85c261ba5bd32"></a><!-- doxytag: member="cxalloc.h::cx_libc_allocator" ref="a6e22cd08a204a3a015d85c261ba5bd32" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int int char char <a class="el" href="struct_cx_mem.html">CxMem</a> <a class="el" href="cxalloc_8h.html#a6e22cd08a204a3a015d85c261ba5bd32">cx_libc_allocator</a></td>
         </tr>
       </table>
 </div>

@@ -60,13 +60,14 @@
   <tr><td class="indexkey">usual/<a class="el" href="aatree_8h.html">aatree.h</a></td><td class="indexvalue">AA-Tree - Binary tree with embeddable nodes </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="base_8h.html">base.h</a></td><td class="indexvalue">Basic C environment </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="bits_8h.html">bits.h</a></td><td class="indexvalue">Bit arithmetics </td></tr>
+  <tr><td class="indexkey">usual/<a class="el" href="bytemap_8h.html">bytemap.h</a></td><td class="indexvalue">Map 256 byte values to bit or int </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="cbtree_8h.html">cbtree.h</a></td><td class="indexvalue">Crit-bit tree / binary radix tree </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="cfparser_8h.html">cfparser.h</a></td><td class="indexvalue">Config file parser </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="ctype_8h.html">ctype.h</a></td><td class="indexvalue">Ctype compat </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="cxalloc_8h.html">cxalloc.h</a></td><td class="indexvalue">Context-based Memory Allocator </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="cxextra_8h.html">cxextra.h</a></td><td class="indexvalue">Extra allocators for cxalloc </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="daemon_8h.html">daemon.h</a></td><td class="indexvalue">Daemonization &amp; pidfile handling </td></tr>
-  <tr><td class="indexkey">usual/<a class="el" href="endian_8h.html">endian.h</a></td><td class="indexvalue">Endianess conversion macros </td></tr>
+  <tr><td class="indexkey">usual/<a class="el" href="endian_8h.html">endian.h</a></td><td class="indexvalue">Endianess conversion, convert integers to bytes </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="err_8h.html">err.h</a></td><td class="indexvalue">Error printing for command-line utilities </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="event_8h.html">event.h</a></td><td class="indexvalue">Libevent compat </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="fileutil_8h.html">fileutil.h</a></td><td class="indexvalue">File access utils </td></tr>
@@ -74,6 +75,7 @@
   <tr><td class="indexkey">usual/<a class="el" href="getopt_8h.html">getopt.h</a></td><td class="indexvalue">Getopt compat </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="hashtab-impl_8h.html">hashtab-impl.h</a></td><td class="indexvalue">Simple customizable hashtable implementation </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="heap_8h.html">heap.h</a></td><td class="indexvalue">Binary heap </td></tr>
+  <tr><td class="indexkey">usual/<a class="el" href="json_8h.html">json.h</a></td><td class="indexvalue">Read and write JSON </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="list_8h.html">list.h</a></td><td class="indexvalue">Circular doubly linked list </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="logging_8h.html">logging.h</a></td><td class="indexvalue">Logging framework for unix services </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="mbuf_8h.html">mbuf.h</a></td><td class="indexvalue">Safe and easy access to memory buffer </td></tr>
@@ -93,16 +95,27 @@
   <tr><td class="indexkey">usual/<a class="el" href="statlist_8h.html">statlist.h</a></td><td class="indexvalue">Circular list that keep track of stats about the list </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="string_8h.html">string.h</a></td><td class="indexvalue">Theme include for strings </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="strpool_8h.html">strpool.h</a></td><td class="indexvalue">Storage for shared strings </td></tr>
+  <tr><td class="indexkey">usual/<a class="el" href="talloc_8h.html">talloc.h</a></td><td class="indexvalue">Talloc - hierarchical memory allocator </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="time_8h.html">time.h</a></td><td class="indexvalue">*Time-related functionality </td></tr>
   <tr><td class="indexkey">usual/<a class="el" href="utf8_8h.html">utf8.h</a></td><td class="indexvalue">Low-level UTF8 handling </td></tr>
+  <tr><td class="indexkey">usual/crypto/<a class="el" href="chacha_8h.html">chacha.h</a></td><td class="indexvalue"><a class="el" href="struct_cha_cha.html" title="ChaCha state.">ChaCha</a> cipher </td></tr>
+  <tr><td class="indexkey">usual/crypto/<a class="el" href="csrandom_8h.html">csrandom.h</a></td><td class="indexvalue">Cryptographically Secure Randomness </td></tr>
   <tr><td class="indexkey">usual/crypto/<a class="el" href="digest_8h.html">digest.h</a></td><td class="indexvalue">Common API for cryptographic digests </td></tr>
+  <tr><td class="indexkey">usual/crypto/<a class="el" href="entropy_8h.html">entropy.h</a></td><td class="indexvalue">Load entropy from OS </td></tr>
   <tr><td class="indexkey">usual/crypto/<a class="el" href="hmac_8h.html">hmac.h</a></td><td class="indexvalue">HMAC-SHA1 implementation (RFC2104) </td></tr>
-  <tr><td class="indexkey">usual/crypto/<a class="el" href="keccak_8h.html">keccak.h</a></td><td class="indexvalue">Keccak with SHA3 parameters </td></tr>
+  <tr><td class="indexkey">usual/crypto/<a class="el" href="keccak_8h.html">keccak.h</a></td><td class="indexvalue">Simple API to Keccak1600 permutation + sponge </td></tr>
+  <tr><td class="indexkey">usual/crypto/<a class="el" href="keccak__prng_8h.html">keccak_prng.h</a></td><td class="indexvalue">Implements PRNG mode for Keccak sponge function </td></tr>
   <tr><td class="indexkey">usual/crypto/<a class="el" href="md5_8h.html">md5.h</a></td><td class="indexvalue">MD5 cryptographic hash </td></tr>
   <tr><td class="indexkey">usual/crypto/<a class="el" href="sha1_8h.html">sha1.h</a></td><td class="indexvalue">SHA1 implementation </td></tr>
+  <tr><td class="indexkey">usual/crypto/<a class="el" href="sha256_8h.html">sha256.h</a></td><td class="indexvalue">SHA256 and SHA224 cryptographic hashes </td></tr>
+  <tr><td class="indexkey">usual/crypto/<a class="el" href="sha3_8h.html">sha3.h</a></td><td class="indexvalue">SHA3 variants of Keccak </td></tr>
+  <tr><td class="indexkey">usual/crypto/<a class="el" href="sha512_8h.html">sha512.h</a></td><td class="indexvalue">SHA512 and SHA384 cryptographic hashes </td></tr>
   <tr><td class="indexkey">usual/hashing/<a class="el" href="crc32_8h.html">crc32.h</a></td><td class="indexvalue">CRC32 checksum </td></tr>
   <tr><td class="indexkey">usual/hashing/<a class="el" href="lookup3_8h.html">lookup3.h</a></td><td class="indexvalue">Jenkins' lookup3 non-cryptographic hash </td></tr>
+  <tr><td class="indexkey">usual/hashing/<a class="el" href="memhash_8h.html">memhash.h</a></td><td class="indexvalue">Randomized in-memory hashing </td></tr>
   <tr><td class="indexkey">usual/hashing/<a class="el" href="siphash_8h.html">siphash.h</a></td><td class="indexvalue">SipHash-2-4 </td></tr>
+  <tr><td class="indexkey">usual/hashing/<a class="el" href="spooky_8h.html">spooky.h</a></td><td class="indexvalue">Jenkins SpookyHash V2 - fast hash for 64-bit CPUs </td></tr>
+  <tr><td class="indexkey">usual/hashing/<a class="el" href="xxhash_8h.html">xxhash.h</a></td><td class="indexvalue">XxHash - fast hash for 32-bit cpu's </td></tr>
 </table>
 </div><!-- contents -->
 

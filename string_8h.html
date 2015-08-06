@@ -77,10 +77,28 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Safely append string to fixed-length buffer.  <a href="#a184e9e11a358ba82ea694c975f7e3df0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a45623070e5e0b7008d44600a283ea2ee">memrchr</a> (const void *s, int c, size_t n)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: find byte in reverse direction.  <a href="#a45623070e5e0b7008d44600a283ea2ee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aee092ebadaa138788e1391f0f15c96d1">memmem</a> (const void *s, size_t slen, const void *q, size_t qlen)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: find memory area.  <a href="#aee092ebadaa138788e1391f0f15c96d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a817cabf20f701a8af69067c92f8f6b6a">mempbrk</a> (const void *data, size_t dlen, const void *find, size_t flen)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return position to first byte that is in 'find'.  <a href="#a817cabf20f701a8af69067c92f8f6b6a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a7f3de1a372f03401e0feafaa0bc8dd5b">memcspn</a> (const void *data, size_t dlen, const void *reject, size_t rlen)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of bytes where none are in reject.  <a href="#a7f3de1a372f03401e0feafaa0bc8dd5b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a555093bf090d1d082bc9c14476054d52">memspn</a> (const void *data, size_t dlen, const void *accept, size_t alen)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of bytes where all are in accept.  <a href="#a555093bf090d1d082bc9c14476054d52"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a425eb3906f797c781dbf35f6614ac1bf">basename</a> (const char *path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Return pointer to last non-path element.  <a href="#a425eb3906f797c781dbf35f6614ac1bf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aef8c7b7786cac41f39cfa7b9b29f2b2b">dirname</a> (const char *path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Return directory part of pathname.  <a href="#aef8c7b7786cac41f39cfa7b9b29f2b2b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a779ca5d71ac4f20477a480975fd18f48">explicit_bzero</a> (void *buf, size_t len)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Definitely clear memory.  <a href="#a779ca5d71ac4f20477a480975fd18f48"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a3956aeaf0df86dd97fdf13db03b68aef">strtod_dot</a> (const char *s, char **tokend)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">strtod() that uses '.  <a href="#a3956aeaf0df86dd97fdf13db03b68aef"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a7ad6aae2d873b0c9a700db52a65808b3">dtostr_dot</a> (char *buf, size_t buflen, double val)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert double to string with '.  <a href="#a7ad6aae2d873b0c9a700db52a65808b3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a921da7839e6f3e07997e1430f6fe7e60">strtonum</a> (const char *s, long long minval, long long maxval, const char **errstr_p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert string to integer, check limits.  <a href="#a921da7839e6f3e07997e1430f6fe7e60"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a93c766c6e86f4f79e7507c21f1794e15">strsep</a> (char **stringp, const char *delim)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return next token from string.  <a href="#a93c766c6e86f4f79e7507c21f1794e15"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="member-group"></a>
 List of strings.</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ab55debf5ba3c9f864f7f18394b3fecc5">str_cb</a> )(void *arg, const char *s)</td></tr>
@@ -464,6 +482,170 @@ List of strings.</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aee092ebadaa138788e1391f0f15c96d1"></a><!-- doxytag: member="string.h::memmem" ref="aee092ebadaa138788e1391f0f15c96d1" args="(const void *s, size_t slen, const void *q, size_t qlen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* <a class="el" href="string_8h.html#aee092ebadaa138788e1391f0f15c96d1">memmem</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>slen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>qlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Compat: find memory area. </p>
+
+</div>
+</div>
+<a class="anchor" id="a817cabf20f701a8af69067c92f8f6b6a"></a><!-- doxytag: member="string.h::mempbrk" ref="a817cabf20f701a8af69067c92f8f6b6a" args="(const void *data, size_t dlen, const void *find, size_t flen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* <a class="el" href="string_8h.html#a817cabf20f701a8af69067c92f8f6b6a">mempbrk</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>find</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>flen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return position to first byte that is in 'find'. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f3de1a372f03401e0feafaa0bc8dd5b"></a><!-- doxytag: member="string.h::memcspn" ref="a7f3de1a372f03401e0feafaa0bc8dd5b" args="(const void *data, size_t dlen, const void *reject, size_t rlen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="string_8h.html#a7f3de1a372f03401e0feafaa0bc8dd5b">memcspn</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>reject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>rlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return number of bytes where none are in reject. </p>
+
+</div>
+</div>
+<a class="anchor" id="a555093bf090d1d082bc9c14476054d52"></a><!-- doxytag: member="string.h::memspn" ref="a555093bf090d1d082bc9c14476054d52" args="(const void *data, size_t dlen, const void *accept, size_t alen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="string_8h.html#a555093bf090d1d082bc9c14476054d52">memspn</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>accept</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>alen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return number of bytes where all are in accept. </p>
+
+</div>
+</div>
 <a class="anchor" id="a425eb3906f797c781dbf35f6614ac1bf"></a><!-- doxytag: member="string.h::basename" ref="a425eb3906f797c781dbf35f6614ac1bf" args="(const char *path)" -->
 <div class="memitem">
 <div class="memproto">
@@ -501,6 +683,175 @@ List of strings.</h2></td></tr>
 
 <p>Compat: Return directory part of pathname. </p>
 <p>Never modifies path, returns either pointer inside path or static buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a779ca5d71ac4f20477a480975fd18f48"></a><!-- doxytag: member="string.h::explicit_bzero" ref="a779ca5d71ac4f20477a480975fd18f48" args="(void *buf, size_t len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="string_8h.html#a779ca5d71ac4f20477a480975fd18f48">explicit_bzero</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definitely clear memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3956aeaf0df86dd97fdf13db03b68aef"></a><!-- doxytag: member="string.h::strtod_dot" ref="a3956aeaf0df86dd97fdf13db03b68aef" args="(const char *s, char **tokend)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="string_8h.html#a3956aeaf0df86dd97fdf13db03b68aef">strtod_dot</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>tokend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>strtod() that uses '. </p>
+<p>' as decimal separator </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ad6aae2d873b0c9a700db52a65808b3"></a><!-- doxytag: member="string.h::dtostr_dot" ref="a7ad6aae2d873b0c9a700db52a65808b3" args="(char *buf, size_t buflen, double val)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t <a class="el" href="string_8h.html#a7ad6aae2d873b0c9a700db52a65808b3">dtostr_dot</a> </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buflen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert double to string with '. </p>
+<p>' as decimal separator </p>
+
+</div>
+</div>
+<a class="anchor" id="a921da7839e6f3e07997e1430f6fe7e60"></a><!-- doxytag: member="string.h::strtonum" ref="a921da7839e6f3e07997e1430f6fe7e60" args="(const char *s, long long minval, long long maxval, const char **errstr_p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long <a class="el" href="string_8h.html#a921da7839e6f3e07997e1430f6fe7e60">strtonum</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>minval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>maxval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>errstr_p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert string to integer, check limits. </p>
+<p>Accepts only decimal numbers, no octal or hex. Allows leading whitespace, but not tailing.</p>
+<p>On success, returns value that is minval &lt;= res &lt;= maxval. If errstr_p is given it stores NULL there. Keeps old errno value.</p>
+<p>On error, returns 0, sets errno, and if errstr_p is given, stores error reason there. </p>
+
+</div>
+</div>
+<a class="anchor" id="a93c766c6e86f4f79e7507c21f1794e15"></a><!-- doxytag: member="string.h::strsep" ref="a93c766c6e86f4f79e7507c21f1794e15" args="(char **stringp, const char *delim)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* <a class="el" href="string_8h.html#a93c766c6e86f4f79e7507c21f1794e15">strsep</a> </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>stringp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>delim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return next token from string. </p>
+<p>Tokens are separated by delim chars Modifies string in-place. </p>
 
 </div>
 </div>

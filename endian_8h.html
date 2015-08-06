@@ -57,75 +57,846 @@
 </div><!--header-->
 <div class="contents">
 
-<p>Endianess conversion macros.  
+<p>Endianess conversion, convert integers to bytes.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Host &lt;-&gt; LE/BE</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b9167199621b390f82c3e5361ba6df6"></a><!-- doxytag: member="endian.h::htobe16" ref="a4b9167199621b390f82c3e5361ba6df6" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>htobe16</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa65407014913309932b9a5ea3c16a86d"></a><!-- doxytag: member="endian.h::htobe32" ref="aa65407014913309932b9a5ea3c16a86d" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>htobe32</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c81b75e6da4507e0a90b6f6169c4787"></a><!-- doxytag: member="endian.h::htobe64" ref="a5c81b75e6da4507e0a90b6f6169c4787" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>htobe64</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ea73a6089f61223b225c46e2ba58a47"></a><!-- doxytag: member="endian.h::htole16" ref="a3ea73a6089f61223b225c46e2ba58a47" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>htole16</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bea1e76e277f13ae39ac86095510bfa"></a><!-- doxytag: member="endian.h::htole32" ref="a9bea1e76e277f13ae39ac86095510bfa" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>htole32</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3070a5f8867dbc37bdafcb1a7cd491bf"></a><!-- doxytag: member="endian.h::htole64" ref="a3070a5f8867dbc37bdafcb1a7cd491bf" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>htole64</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb9b3120f6457dc04471c134fee1d221"></a><!-- doxytag: member="endian.h::be16toh" ref="abb9b3120f6457dc04471c134fee1d221" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>be16toh</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6acac399720b3a57d9050420aa0aac41"></a><!-- doxytag: member="endian.h::be32toh" ref="a6acac399720b3a57d9050420aa0aac41" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>be32toh</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af94eb043f5be14b4f260fb9b4c89ca2e"></a><!-- doxytag: member="endian.h::be64toh" ref="af94eb043f5be14b4f260fb9b4c89ca2e" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>be64toh</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a684a5d26d1989cbd925e97292cc81c72"></a><!-- doxytag: member="endian.h::le16toh" ref="a684a5d26d1989cbd925e97292cc81c72" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>le16toh</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2dfbafcefb3add65ea44e581398e90a"></a><!-- doxytag: member="endian.h::le32toh" ref="ad2dfbafcefb3add65ea44e581398e90a" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>le32toh</b>(x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeefd2e03c936cc08821e7fa67946c4a"></a><!-- doxytag: member="endian.h::le64toh" ref="afeefd2e03c936cc08821e7fa67946c4a" args="(x)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>le64toh</b>(x)</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Convert host-endian int to BE/LE.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a4b9167199621b390f82c3e5361ba6df6">htobe16</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert native 16-bit int to big-endian.  <a href="#a4b9167199621b390f82c3e5361ba6df6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#aa65407014913309932b9a5ea3c16a86d">htobe32</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert native 32-bit int to big-endian.  <a href="#aa65407014913309932b9a5ea3c16a86d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a5c81b75e6da4507e0a90b6f6169c4787">htobe64</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert native 64-bit int to big-endian.  <a href="#a5c81b75e6da4507e0a90b6f6169c4787"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a3ea73a6089f61223b225c46e2ba58a47">htole16</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert native 16-bit int to little-endian.  <a href="#a3ea73a6089f61223b225c46e2ba58a47"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a9bea1e76e277f13ae39ac86095510bfa">htole32</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert native 32-bit int to little-endian.  <a href="#a9bea1e76e277f13ae39ac86095510bfa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a3070a5f8867dbc37bdafcb1a7cd491bf">htole64</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert native 64-bit int to little-endian.  <a href="#a3070a5f8867dbc37bdafcb1a7cd491bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#abb9b3120f6457dc04471c134fee1d221">be16toh</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert big-endian 16-bit int to host-endian.  <a href="#abb9b3120f6457dc04471c134fee1d221"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a6acac399720b3a57d9050420aa0aac41">be32toh</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert big-endian 32-bit int to host-endian.  <a href="#a6acac399720b3a57d9050420aa0aac41"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#af94eb043f5be14b4f260fb9b4c89ca2e">be64toh</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert big-endian 64-bit int to host-endian.  <a href="#af94eb043f5be14b4f260fb9b4c89ca2e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a684a5d26d1989cbd925e97292cc81c72">le16toh</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert little-endian 64-bit int to host-endian.  <a href="#a684a5d26d1989cbd925e97292cc81c72"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#ad2dfbafcefb3add65ea44e581398e90a">le32toh</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert little-endian 64-bit int to host-endian.  <a href="#ad2dfbafcefb3add65ea44e581398e90a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#afeefd2e03c936cc08821e7fa67946c4a">le64toh</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert little-endian 64-bit int to host-endian.  <a href="#afeefd2e03c936cc08821e7fa67946c4a"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Always swap.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86b872249d4bcf1f6b08c4af388f1d3c"></a><!-- doxytag: member="endian.h::bswap16" ref="a86b872249d4bcf1f6b08c4af388f1d3c" args="(uint16_t x)" -->
-static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>bswap16</b> (uint16_t x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3936f87d16fc7dff2ed462b864a5e25d"></a><!-- doxytag: member="endian.h::bswap32" ref="a3936f87d16fc7dff2ed462b864a5e25d" args="(uint32_t x)" -->
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>bswap32</b> (uint32_t x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a750ac779abf83dc6a56e8be7418fd377"></a><!-- doxytag: member="endian.h::bswap64" ref="a750ac779abf83dc6a56e8be7418fd377" args="(uint64_t x)" -->
-static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bswap64</b> (uint64_t x)</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Read LE/BE values from memory and convert to host format</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cd927ab19c032504bea7156f9e80f71"></a><!-- doxytag: member="endian.h::be16dec" ref="a2cd927ab19c032504bea7156f9e80f71" args="(const void *p)" -->
-static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>be16dec</b> (const void *p)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fd3b450825d97b68a4fc3388a04b18f"></a><!-- doxytag: member="endian.h::be32dec" ref="a9fd3b450825d97b68a4fc3388a04b18f" args="(const void *p)" -->
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>be32dec</b> (const void *p)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe69b843a334ec8426d2388f97b030a0"></a><!-- doxytag: member="endian.h::be64dec" ref="afe69b843a334ec8426d2388f97b030a0" args="(const void *p)" -->
-static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>be64dec</b> (const void *p)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c88e232d56426145e4fc15dd6bff88e"></a><!-- doxytag: member="endian.h::le16dec" ref="a6c88e232d56426145e4fc15dd6bff88e" args="(const void *p)" -->
-static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>le16dec</b> (const void *p)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fda96f9730aa9a488c72fd74611198c"></a><!-- doxytag: member="endian.h::le32dec" ref="a4fda96f9730aa9a488c72fd74611198c" args="(const void *p)" -->
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>le32dec</b> (const void *p)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d91714abf97b4e748bbbeddb4889256"></a><!-- doxytag: member="endian.h::le64dec" ref="a2d91714abf97b4e748bbbeddb4889256" args="(const void *p)" -->
-static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>le64dec</b> (const void *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a86b872249d4bcf1f6b08c4af388f1d3c">bswap16</a> (uint16_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap 16-bit int.  <a href="#a86b872249d4bcf1f6b08c4af388f1d3c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a3936f87d16fc7dff2ed462b864a5e25d">bswap32</a> (uint32_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap 32-bit int.  <a href="#a3936f87d16fc7dff2ed462b864a5e25d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a750ac779abf83dc6a56e8be7418fd377">bswap64</a> (uint64_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap 64-bit int.  <a href="#a750ac779abf83dc6a56e8be7418fd377"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Read integer values from memory and convert to host format.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a2cd927ab19c032504bea7156f9e80f71">be16dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read big-endian 16-bit int from memory.  <a href="#a2cd927ab19c032504bea7156f9e80f71"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a9fd3b450825d97b68a4fc3388a04b18f">be32dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read big-endian 32-bit int from memory.  <a href="#a9fd3b450825d97b68a4fc3388a04b18f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#afe69b843a334ec8426d2388f97b030a0">be64dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read big-endian 64-bit int from memory.  <a href="#afe69b843a334ec8426d2388f97b030a0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a6c88e232d56426145e4fc15dd6bff88e">le16dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read little-endian 16-bit int from memory.  <a href="#a6c88e232d56426145e4fc15dd6bff88e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a4fda96f9730aa9a488c72fd74611198c">le32dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read little-endian 32-bit int from memory.  <a href="#a4fda96f9730aa9a488c72fd74611198c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a2d91714abf97b4e748bbbeddb4889256">le64dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read little-endian 64-bit int from memory.  <a href="#a2d91714abf97b4e748bbbeddb4889256"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#ae1dc9fdf5e7a3fa7e4f7ffba3defc57f">h16dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read host-endian 16-bit int from memory.  <a href="#ae1dc9fdf5e7a3fa7e4f7ffba3defc57f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a2289da695bbbdb7218db9d7f466f663a">h32dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read host-endian 32-bit int from memory.  <a href="#a2289da695bbbdb7218db9d7f466f663a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#afe732decc18c07e1c6e06c33e98b5b72">h64dec</a> (const void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read host-endian 64-bit int from memory.  <a href="#afe732decc18c07e1c6e06c33e98b5b72"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Convert host value to LE/BE and write to memory</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49c34360de2ad71e5dc46722dc356c03"></a><!-- doxytag: member="endian.h::be16enc" ref="a49c34360de2ad71e5dc46722dc356c03" args="(void *p, uint16_t x)" -->
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>be16enc</b> (void *p, uint16_t x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a885af52639eacdbcbd3cc4d4279e7e0e"></a><!-- doxytag: member="endian.h::be32enc" ref="a885af52639eacdbcbd3cc4d4279e7e0e" args="(void *p, uint32_t x)" -->
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>be32enc</b> (void *p, uint32_t x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab187a088ea9ca2dc4b2fa6f4faa2d739"></a><!-- doxytag: member="endian.h::be64enc" ref="ab187a088ea9ca2dc4b2fa6f4faa2d739" args="(void *p, uint64_t x)" -->
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>be64enc</b> (void *p, uint64_t x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a571a448150d782decc1699206954cc27"></a><!-- doxytag: member="endian.h::le16enc" ref="a571a448150d782decc1699206954cc27" args="(void *p, uint16_t x)" -->
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>le16enc</b> (void *p, uint16_t x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59c9479d3a44ed435c30ceb102e883a6"></a><!-- doxytag: member="endian.h::le32enc" ref="a59c9479d3a44ed435c30ceb102e883a6" args="(void *p, uint32_t x)" -->
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>le32enc</b> (void *p, uint32_t x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a829dc4f3a8372fcafa71f3c16fdba451"></a><!-- doxytag: member="endian.h::le64enc" ref="a829dc4f3a8372fcafa71f3c16fdba451" args="(void *p, uint64_t x)" -->
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>le64enc</b> (void *p, uint64_t x)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a49c34360de2ad71e5dc46722dc356c03">be16enc</a> (void *p, uint16_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write big-endian 16-bit int to memory.  <a href="#a49c34360de2ad71e5dc46722dc356c03"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a885af52639eacdbcbd3cc4d4279e7e0e">be32enc</a> (void *p, uint32_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write big-endian 32-bit int to memory.  <a href="#a885af52639eacdbcbd3cc4d4279e7e0e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#ab187a088ea9ca2dc4b2fa6f4faa2d739">be64enc</a> (void *p, uint64_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write big-endian 64-bit int to memory.  <a href="#ab187a088ea9ca2dc4b2fa6f4faa2d739"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a571a448150d782decc1699206954cc27">le16enc</a> (void *p, uint16_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write little-endian 16-bit int to memory.  <a href="#a571a448150d782decc1699206954cc27"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a59c9479d3a44ed435c30ceb102e883a6">le32enc</a> (void *p, uint32_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write little-endian 32-bit int to memory.  <a href="#a59c9479d3a44ed435c30ceb102e883a6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a829dc4f3a8372fcafa71f3c16fdba451">le64enc</a> (void *p, uint64_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write little-endian 64-bit int to memory.  <a href="#a829dc4f3a8372fcafa71f3c16fdba451"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#ada3f637be631578ad3d856423636ec45">h16enc</a> (void *p, uint16_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write host-endian 16-bit int to memory.  <a href="#ada3f637be631578ad3d856423636ec45"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a7db8ebf5f5fb981e186fae4cf6c7f755">h32enc</a> (void *p, uint32_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write host-endian 32-bit int to memory.  <a href="#a7db8ebf5f5fb981e186fae4cf6c7f755"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endian_8h.html#a5bd94c05363b7e312cb775c1f39faca5">h64enc</a> (void *p, uint64_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write host-endian 64-bit int to memory.  <a href="#a5bd94c05363b7e312cb775c1f39faca5"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Endianess conversion macros. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Endianess conversion, convert integers to bytes. </p>
+</div><hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a4b9167199621b390f82c3e5361ba6df6"></a><!-- doxytag: member="endian.h::htobe16" ref="a4b9167199621b390f82c3e5361ba6df6" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#a4b9167199621b390f82c3e5361ba6df6">htobe16</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert native 16-bit int to big-endian. </p>
+
+<p>Referenced by <a class="el" href="endian_8h.html#a2cd927ab19c032504bea7156f9e80f71">be16dec()</a>, and <a class="el" href="endian_8h.html#a49c34360de2ad71e5dc46722dc356c03">be16enc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa65407014913309932b9a5ea3c16a86d"></a><!-- doxytag: member="endian.h::htobe32" ref="aa65407014913309932b9a5ea3c16a86d" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#aa65407014913309932b9a5ea3c16a86d">htobe32</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert native 32-bit int to big-endian. </p>
+
+<p>Referenced by <a class="el" href="endian_8h.html#a9fd3b450825d97b68a4fc3388a04b18f">be32dec()</a>, and <a class="el" href="endian_8h.html#a885af52639eacdbcbd3cc4d4279e7e0e">be32enc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c81b75e6da4507e0a90b6f6169c4787"></a><!-- doxytag: member="endian.h::htobe64" ref="a5c81b75e6da4507e0a90b6f6169c4787" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#a5c81b75e6da4507e0a90b6f6169c4787">htobe64</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert native 64-bit int to big-endian. </p>
+
+<p>Referenced by <a class="el" href="endian_8h.html#afe69b843a334ec8426d2388f97b030a0">be64dec()</a>, and <a class="el" href="endian_8h.html#ab187a088ea9ca2dc4b2fa6f4faa2d739">be64enc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ea73a6089f61223b225c46e2ba58a47"></a><!-- doxytag: member="endian.h::htole16" ref="a3ea73a6089f61223b225c46e2ba58a47" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#a3ea73a6089f61223b225c46e2ba58a47">htole16</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert native 16-bit int to little-endian. </p>
+
+<p>Referenced by <a class="el" href="endian_8h.html#a6c88e232d56426145e4fc15dd6bff88e">le16dec()</a>, and <a class="el" href="endian_8h.html#a571a448150d782decc1699206954cc27">le16enc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9bea1e76e277f13ae39ac86095510bfa"></a><!-- doxytag: member="endian.h::htole32" ref="a9bea1e76e277f13ae39ac86095510bfa" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#a9bea1e76e277f13ae39ac86095510bfa">htole32</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert native 32-bit int to little-endian. </p>
+
+<p>Referenced by <a class="el" href="endian_8h.html#a4fda96f9730aa9a488c72fd74611198c">le32dec()</a>, and <a class="el" href="endian_8h.html#a59c9479d3a44ed435c30ceb102e883a6">le32enc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3070a5f8867dbc37bdafcb1a7cd491bf"></a><!-- doxytag: member="endian.h::htole64" ref="a3070a5f8867dbc37bdafcb1a7cd491bf" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#a3070a5f8867dbc37bdafcb1a7cd491bf">htole64</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert native 64-bit int to little-endian. </p>
+
+<p>Referenced by <a class="el" href="endian_8h.html#a2d91714abf97b4e748bbbeddb4889256">le64dec()</a>, and <a class="el" href="endian_8h.html#a829dc4f3a8372fcafa71f3c16fdba451">le64enc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb9b3120f6457dc04471c134fee1d221"></a><!-- doxytag: member="endian.h::be16toh" ref="abb9b3120f6457dc04471c134fee1d221" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#abb9b3120f6457dc04471c134fee1d221">be16toh</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert big-endian 16-bit int to host-endian. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6acac399720b3a57d9050420aa0aac41"></a><!-- doxytag: member="endian.h::be32toh" ref="a6acac399720b3a57d9050420aa0aac41" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#a6acac399720b3a57d9050420aa0aac41">be32toh</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert big-endian 32-bit int to host-endian. </p>
+
+</div>
+</div>
+<a class="anchor" id="af94eb043f5be14b4f260fb9b4c89ca2e"></a><!-- doxytag: member="endian.h::be64toh" ref="af94eb043f5be14b4f260fb9b4c89ca2e" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#af94eb043f5be14b4f260fb9b4c89ca2e">be64toh</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert big-endian 64-bit int to host-endian. </p>
+
+</div>
+</div>
+<a class="anchor" id="a684a5d26d1989cbd925e97292cc81c72"></a><!-- doxytag: member="endian.h::le16toh" ref="a684a5d26d1989cbd925e97292cc81c72" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#a684a5d26d1989cbd925e97292cc81c72">le16toh</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert little-endian 64-bit int to host-endian. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2dfbafcefb3add65ea44e581398e90a"></a><!-- doxytag: member="endian.h::le32toh" ref="ad2dfbafcefb3add65ea44e581398e90a" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#ad2dfbafcefb3add65ea44e581398e90a">le32toh</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert little-endian 64-bit int to host-endian. </p>
+
+</div>
+</div>
+<a class="anchor" id="afeefd2e03c936cc08821e7fa67946c4a"></a><!-- doxytag: member="endian.h::le64toh" ref="afeefd2e03c936cc08821e7fa67946c4a" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="endian_8h.html#afeefd2e03c936cc08821e7fa67946c4a">le64toh</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convert little-endian 64-bit int to host-endian. </p>
+
+</div>
+</div>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="a86b872249d4bcf1f6b08c4af388f1d3c"></a><!-- doxytag: member="endian.h::bswap16" ref="a86b872249d4bcf1f6b08c4af388f1d3c" args="(uint16_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t <a class="el" href="endian_8h.html#a86b872249d4bcf1f6b08c4af388f1d3c">bswap16</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Swap 16-bit int. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3936f87d16fc7dff2ed462b864a5e25d"></a><!-- doxytag: member="endian.h::bswap32" ref="a3936f87d16fc7dff2ed462b864a5e25d" args="(uint32_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t <a class="el" href="endian_8h.html#a3936f87d16fc7dff2ed462b864a5e25d">bswap32</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Swap 32-bit int. </p>
+
+<p>Referenced by <a class="el" href="endian_8h.html#a750ac779abf83dc6a56e8be7418fd377">bswap64()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a750ac779abf83dc6a56e8be7418fd377"></a><!-- doxytag: member="endian.h::bswap64" ref="a750ac779abf83dc6a56e8be7418fd377" args="(uint64_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint64_t <a class="el" href="endian_8h.html#a750ac779abf83dc6a56e8be7418fd377">bswap64</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Swap 64-bit int. </p>
+
+<p>References <a class="el" href="endian_8h.html#a3936f87d16fc7dff2ed462b864a5e25d">bswap32()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cd927ab19c032504bea7156f9e80f71"></a><!-- doxytag: member="endian.h::be16dec" ref="a2cd927ab19c032504bea7156f9e80f71" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t <a class="el" href="endian_8h.html#a2cd927ab19c032504bea7156f9e80f71">be16dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read big-endian 16-bit int from memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a4b9167199621b390f82c3e5361ba6df6">htobe16</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9fd3b450825d97b68a4fc3388a04b18f"></a><!-- doxytag: member="endian.h::be32dec" ref="a9fd3b450825d97b68a4fc3388a04b18f" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t <a class="el" href="endian_8h.html#a9fd3b450825d97b68a4fc3388a04b18f">be32dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read big-endian 32-bit int from memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#aa65407014913309932b9a5ea3c16a86d">htobe32</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe69b843a334ec8426d2388f97b030a0"></a><!-- doxytag: member="endian.h::be64dec" ref="afe69b843a334ec8426d2388f97b030a0" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint64_t <a class="el" href="endian_8h.html#afe69b843a334ec8426d2388f97b030a0">be64dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read big-endian 64-bit int from memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a5c81b75e6da4507e0a90b6f6169c4787">htobe64</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c88e232d56426145e4fc15dd6bff88e"></a><!-- doxytag: member="endian.h::le16dec" ref="a6c88e232d56426145e4fc15dd6bff88e" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t <a class="el" href="endian_8h.html#a6c88e232d56426145e4fc15dd6bff88e">le16dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read little-endian 16-bit int from memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a3ea73a6089f61223b225c46e2ba58a47">htole16</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fda96f9730aa9a488c72fd74611198c"></a><!-- doxytag: member="endian.h::le32dec" ref="a4fda96f9730aa9a488c72fd74611198c" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t <a class="el" href="endian_8h.html#a4fda96f9730aa9a488c72fd74611198c">le32dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read little-endian 32-bit int from memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a9bea1e76e277f13ae39ac86095510bfa">htole32</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d91714abf97b4e748bbbeddb4889256"></a><!-- doxytag: member="endian.h::le64dec" ref="a2d91714abf97b4e748bbbeddb4889256" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint64_t <a class="el" href="endian_8h.html#a2d91714abf97b4e748bbbeddb4889256">le64dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read little-endian 64-bit int from memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a3070a5f8867dbc37bdafcb1a7cd491bf">htole64</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1dc9fdf5e7a3fa7e4f7ffba3defc57f"></a><!-- doxytag: member="endian.h::h16dec" ref="ae1dc9fdf5e7a3fa7e4f7ffba3defc57f" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t <a class="el" href="endian_8h.html#ae1dc9fdf5e7a3fa7e4f7ffba3defc57f">h16dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read host-endian 16-bit int from memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2289da695bbbdb7218db9d7f466f663a"></a><!-- doxytag: member="endian.h::h32dec" ref="a2289da695bbbdb7218db9d7f466f663a" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t <a class="el" href="endian_8h.html#a2289da695bbbdb7218db9d7f466f663a">h32dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read host-endian 32-bit int from memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="afe732decc18c07e1c6e06c33e98b5b72"></a><!-- doxytag: member="endian.h::h64dec" ref="afe732decc18c07e1c6e06c33e98b5b72" args="(const void *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint64_t <a class="el" href="endian_8h.html#afe732decc18c07e1c6e06c33e98b5b72">h64dec</a> </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read host-endian 64-bit int from memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="a49c34360de2ad71e5dc46722dc356c03"></a><!-- doxytag: member="endian.h::be16enc" ref="a49c34360de2ad71e5dc46722dc356c03" args="(void *p, uint16_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#a49c34360de2ad71e5dc46722dc356c03">be16enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write big-endian 16-bit int to memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a4b9167199621b390f82c3e5361ba6df6">htobe16</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a885af52639eacdbcbd3cc4d4279e7e0e"></a><!-- doxytag: member="endian.h::be32enc" ref="a885af52639eacdbcbd3cc4d4279e7e0e" args="(void *p, uint32_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#a885af52639eacdbcbd3cc4d4279e7e0e">be32enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write big-endian 32-bit int to memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#aa65407014913309932b9a5ea3c16a86d">htobe32</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab187a088ea9ca2dc4b2fa6f4faa2d739"></a><!-- doxytag: member="endian.h::be64enc" ref="ab187a088ea9ca2dc4b2fa6f4faa2d739" args="(void *p, uint64_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#ab187a088ea9ca2dc4b2fa6f4faa2d739">be64enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write big-endian 64-bit int to memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a5c81b75e6da4507e0a90b6f6169c4787">htobe64</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a571a448150d782decc1699206954cc27"></a><!-- doxytag: member="endian.h::le16enc" ref="a571a448150d782decc1699206954cc27" args="(void *p, uint16_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#a571a448150d782decc1699206954cc27">le16enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write little-endian 16-bit int to memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a3ea73a6089f61223b225c46e2ba58a47">htole16</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59c9479d3a44ed435c30ceb102e883a6"></a><!-- doxytag: member="endian.h::le32enc" ref="a59c9479d3a44ed435c30ceb102e883a6" args="(void *p, uint32_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#a59c9479d3a44ed435c30ceb102e883a6">le32enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write little-endian 32-bit int to memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a9bea1e76e277f13ae39ac86095510bfa">htole32</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a829dc4f3a8372fcafa71f3c16fdba451"></a><!-- doxytag: member="endian.h::le64enc" ref="a829dc4f3a8372fcafa71f3c16fdba451" args="(void *p, uint64_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#a829dc4f3a8372fcafa71f3c16fdba451">le64enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write little-endian 64-bit int to memory. </p>
+
+<p>References <a class="el" href="endian_8h.html#a3070a5f8867dbc37bdafcb1a7cd491bf">htole64</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada3f637be631578ad3d856423636ec45"></a><!-- doxytag: member="endian.h::h16enc" ref="ada3f637be631578ad3d856423636ec45" args="(void *p, uint16_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#ada3f637be631578ad3d856423636ec45">h16enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write host-endian 16-bit int to memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7db8ebf5f5fb981e186fae4cf6c7f755"></a><!-- doxytag: member="endian.h::h32enc" ref="a7db8ebf5f5fb981e186fae4cf6c7f755" args="(void *p, uint32_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#a7db8ebf5f5fb981e186fae4cf6c7f755">h32enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write host-endian 32-bit int to memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5bd94c05363b7e312cb775c1f39faca5"></a><!-- doxytag: member="endian.h::h64enc" ref="a5bd94c05363b7e312cb775c1f39faca5" args="(void *p, uint64_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="endian_8h.html#a5bd94c05363b7e312cb775c1f39faca5">h64enc</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write host-endian 64-bit int to memory. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>

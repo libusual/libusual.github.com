@@ -64,8 +64,8 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#ab99ee0d8b6063133afbba9b21ec4f0e9">is_power_of_2</a> (int n)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if integer has only one bit set.  <a href="#ab99ee0d8b6063133afbba9b21ec4f0e9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a5a465def520c1cb5ddc56bdf465d3680">is_power_of_2</a> (unsigned int n)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if integer has only one bit set.  <a href="#a5a465def520c1cb5ddc56bdf465d3680"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a22fdde856d2bc94a65f70f0fea036faf">rol16</a> (uint16_t v, int s)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate 16-bit int to left.  <a href="#a22fdde856d2bc94a65f70f0fea036faf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a27fccb9c46d35c883e02c2acac3e9725">rol32</a> (uint32_t v, int s)</td></tr>
@@ -79,17 +79,31 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#ac761a38ba229e73b4f7ba4db4413b2b3">ror64</a> (uint64_t v, int s)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate 64-bit int to right.  <a href="#ac761a38ba229e73b4f7ba4db4413b2b3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a3f7a95672d91a38e3db4be2585ff347a">fls</a> (int x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Find last (MSB) set bit, 1-based ofs, 0 if arg == 0.  <a href="#a3f7a95672d91a38e3db4be2585ff347a"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find last (highest) set bit, 1-based offset, 0 if arg == 0.  <a href="#a3f7a95672d91a38e3db4be2585ff347a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a46b50e066dbdca8213031d81b8cb65bd">flsl</a> (long x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Find last (MSB) set bit, 1-based ofs, 0 if arg == 0.  <a href="#a46b50e066dbdca8213031d81b8cb65bd"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find last (highest) set bit, 1-based offset, 0 if arg == 0.  <a href="#a46b50e066dbdca8213031d81b8cb65bd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a89b45509f76cf0495a56839cb9585f4c">flsll</a> (long long x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Find last (MSB) set bit, 1-based ofs, 0 if arg == 0.  <a href="#a89b45509f76cf0495a56839cb9585f4c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find last (highest) set bit, 1-based offset, 0 if arg == 0.  <a href="#a89b45509f76cf0495a56839cb9585f4c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a48f84c70490f13f24ec75fa4bb8b7101">ffs</a> (int x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Find first (LSB) set bit, 1-based ofs, 0 if arg == 0.  <a href="#a48f84c70490f13f24ec75fa4bb8b7101"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find first (lowest) set bit, 1-based ofs, 0 if arg == 0.  <a href="#a48f84c70490f13f24ec75fa4bb8b7101"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#aac94df901a3fbc7d3f6b2da19e98f667">ffsl</a> (long x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Find first (LSB) set bit, 1-based ofs, 0 if arg == 0.  <a href="#aac94df901a3fbc7d3f6b2da19e98f667"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find first (lowest) set bit, 1-based ofs, 0 if arg == 0.  <a href="#aac94df901a3fbc7d3f6b2da19e98f667"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a7e615a015ad890567c50e0aaf3d74786">ffsll</a> (long long x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compat: Find first (LSB) set bit, 1-based ofs, 0 if arg == 0.  <a href="#a7e615a015ad890567c50e0aaf3d74786"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find first (lowest) set bit, 1-based ofs, 0 if arg == 0.  <a href="#a7e615a015ad890567c50e0aaf3d74786"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#addcf98a72e13d37ab6093b3aaa1a1cdc">safe_mul_uint</a> (unsigned int *res_p, unsigned int a, unsigned int b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply with overflow check for 'unsigned int'.  <a href="#addcf98a72e13d37ab6093b3aaa1a1cdc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a1200b25673ef6b124536da5a830d73cf">safe_mul_ulong</a> (unsigned long *res_p, unsigned long a, unsigned long b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply with overflow check for 'unsigned long'.  <a href="#a1200b25673ef6b124536da5a830d73cf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#aa9c7b89c5fb22ba4fdb023fabf9703e1">safe_mul_uint8</a> (uint8_t *res_p, uint8_t a, uint8_t b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply with overflow check for 'uint8_t'.  <a href="#aa9c7b89c5fb22ba4fdb023fabf9703e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a8875514759320e977765ebe61cf949e5">safe_mul_uint16</a> (uint16_t *res_p, uint16_t a, uint16_t b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply with overflow check for 'uint16_t'.  <a href="#a8875514759320e977765ebe61cf949e5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#ac3d0663d78a4d9d04fa2866c1187fa42">safe_mul_uint32</a> (uint32_t *res_p, uint32_t a, uint32_t b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply with overflow check for 'uint32_t'.  <a href="#ac3d0663d78a4d9d04fa2866c1187fa42"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a3590225d6f8bc1d0403d26871474518d">safe_mul_uint64</a> (uint64_t *res_p, uint64_t a, uint64_t b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply with overflow check for 'uint64_t'.  <a href="#a3590225d6f8bc1d0403d26871474518d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bits_8h.html#a23df0957ef8a02db3a6c9d7000078412">safe_mul_size</a> (size_t *res_p, size_t a, size_t b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply with overflow check for 'size_t'.  <a href="#a23df0957ef8a02db3a6c9d7000078412"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Bit arithmetics. </p>
@@ -101,14 +115,14 @@ Functions</h2></td></tr>
 <li>ror16, ror32, ror64 </li>
 </ul>
 </div><hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ab99ee0d8b6063133afbba9b21ec4f0e9"></a><!-- doxytag: member="bits.h::is_power_of_2" ref="ab99ee0d8b6063133afbba9b21ec4f0e9" args="(int n)" -->
+<a class="anchor" id="a5a465def520c1cb5ddc56bdf465d3680"></a><!-- doxytag: member="bits.h::is_power_of_2" ref="a5a465def520c1cb5ddc56bdf465d3680" args="(unsigned int n)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static int <a class="el" href="bits_8h.html#ab99ee0d8b6063133afbba9b21ec4f0e9">is_power_of_2</a> </td>
+          <td class="memname">static bool <a class="el" href="bits_8h.html#a5a465def520c1cb5ddc56bdf465d3680">is_power_of_2</a> </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td><code> [inline, static]</code></td>
         </tr>
@@ -321,7 +335,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Compat: Find last (MSB) set bit, 1-based ofs, 0 if arg == 0. </p>
+<p>Find last (highest) set bit, 1-based offset, 0 if arg == 0. </p>
 
 </div>
 </div>
@@ -340,7 +354,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Compat: Find last (MSB) set bit, 1-based ofs, 0 if arg == 0. </p>
+<p>Find last (highest) set bit, 1-based offset, 0 if arg == 0. </p>
 
 </div>
 </div>
@@ -359,7 +373,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Compat: Find last (MSB) set bit, 1-based ofs, 0 if arg == 0. </p>
+<p>Find last (highest) set bit, 1-based offset, 0 if arg == 0. </p>
 
 </div>
 </div>
@@ -378,7 +392,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Compat: Find first (LSB) set bit, 1-based ofs, 0 if arg == 0. </p>
+<p>Find first (lowest) set bit, 1-based ofs, 0 if arg == 0. </p>
 
 </div>
 </div>
@@ -397,7 +411,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Compat: Find first (LSB) set bit, 1-based ofs, 0 if arg == 0. </p>
+<p>Find first (lowest) set bit, 1-based ofs, 0 if arg == 0. </p>
 
 </div>
 </div>
@@ -416,7 +430,252 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Compat: Find first (LSB) set bit, 1-based ofs, 0 if arg == 0. </p>
+<p>Find first (lowest) set bit, 1-based ofs, 0 if arg == 0. </p>
+
+</div>
+</div>
+<a class="anchor" id="addcf98a72e13d37ab6093b3aaa1a1cdc"></a><!-- doxytag: member="bits.h::safe_mul_uint" ref="addcf98a72e13d37ab6093b3aaa1a1cdc" args="(unsigned int *res_p, unsigned int a, unsigned int b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="bits_8h.html#addcf98a72e13d37ab6093b3aaa1a1cdc">safe_mul_uint</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>res_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiply with overflow check for 'unsigned int'. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1200b25673ef6b124536da5a830d73cf"></a><!-- doxytag: member="bits.h::safe_mul_ulong" ref="a1200b25673ef6b124536da5a830d73cf" args="(unsigned long *res_p, unsigned long a, unsigned long b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="bits_8h.html#a1200b25673ef6b124536da5a830d73cf">safe_mul_ulong</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>res_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiply with overflow check for 'unsigned long'. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa9c7b89c5fb22ba4fdb023fabf9703e1"></a><!-- doxytag: member="bits.h::safe_mul_uint8" ref="aa9c7b89c5fb22ba4fdb023fabf9703e1" args="(uint8_t *res_p, uint8_t a, uint8_t b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="bits_8h.html#aa9c7b89c5fb22ba4fdb023fabf9703e1">safe_mul_uint8</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>res_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiply with overflow check for 'uint8_t'. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8875514759320e977765ebe61cf949e5"></a><!-- doxytag: member="bits.h::safe_mul_uint16" ref="a8875514759320e977765ebe61cf949e5" args="(uint16_t *res_p, uint16_t a, uint16_t b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="bits_8h.html#a8875514759320e977765ebe61cf949e5">safe_mul_uint16</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>res_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiply with overflow check for 'uint16_t'. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3d0663d78a4d9d04fa2866c1187fa42"></a><!-- doxytag: member="bits.h::safe_mul_uint32" ref="ac3d0663d78a4d9d04fa2866c1187fa42" args="(uint32_t *res_p, uint32_t a, uint32_t b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="bits_8h.html#ac3d0663d78a4d9d04fa2866c1187fa42">safe_mul_uint32</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>res_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiply with overflow check for 'uint32_t'. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3590225d6f8bc1d0403d26871474518d"></a><!-- doxytag: member="bits.h::safe_mul_uint64" ref="a3590225d6f8bc1d0403d26871474518d" args="(uint64_t *res_p, uint64_t a, uint64_t b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="bits_8h.html#a3590225d6f8bc1d0403d26871474518d">safe_mul_uint64</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>res_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiply with overflow check for 'uint64_t'. </p>
+
+</div>
+</div>
+<a class="anchor" id="a23df0957ef8a02db3a6c9d7000078412"></a><!-- doxytag: member="bits.h::safe_mul_size" ref="a23df0957ef8a02db3a6c9d7000078412" args="(size_t *res_p, size_t a, size_t b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="bits_8h.html#a23df0957ef8a02db3a6c9d7000078412">safe_mul_size</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>res_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiply with overflow check for 'size_t'. </p>
 
 </div>
 </div>

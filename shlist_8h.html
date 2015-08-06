@@ -72,20 +72,24 @@ Data Structures</h2></td></tr>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#ac5999af4214131fe425ec824619070d0">shlist_pop_type</a>(list, type, field)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove and return specific type of elem.  <a href="#ac5999af4214131fe425ec824619070d0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#ac346527d01c897da7be15260536c3409">shlist_for_each</a>(item, list)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop over list.  <a href="#ac346527d01c897da7be15260536c3409"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#ac942a70c094e8cb63bc779a5899fb166">shlist_for_each_safe</a>(item, list, tmp)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop over list and allow removing item.  <a href="#ac942a70c094e8cb63bc779a5899fb166"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#a59b917e52ee42898f677bb0071f6201a">shlist_for_each</a>(node, list)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop over list.  <a href="#a59b917e52ee42898f677bb0071f6201a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#a444487bc9d8f49c959b1ca089d4aab2f">shlist_for_each_safe</a>(node, list, tmp)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop over list and allow removing node.  <a href="#a444487bc9d8f49c959b1ca089d4aab2f"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#af03278e6de8795e77c85e2af6d0c3f2e">shlist_get_next</a> (const struct <a class="el" href="struct_s_h_list.html">SHList</a> *node)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get next element in list.  <a href="#af03278e6de8795e77c85e2af6d0c3f2e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#acb35b4c4fa1833c218e5f0e141cc06c4">shlist_get_prev</a> (const struct <a class="el" href="struct_s_h_list.html">SHList</a> *node)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get prev element in list.  <a href="#acb35b4c4fa1833c218e5f0e141cc06c4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#acd80cad4b2e778343e37cfd35ee42576">shlist_init</a> (struct <a class="el" href="struct_s_h_list.html">SHList</a> *list)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize list head.  <a href="#acd80cad4b2e778343e37cfd35ee42576"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#aa203720c7a5437bc590c6a3678a4b09f">shlist_append</a> (struct <a class="el" href="struct_s_h_list.html">SHList</a> *list, struct <a class="el" href="struct_s_h_list.html">SHList</a> *item)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert as last element.  <a href="#aa203720c7a5437bc590c6a3678a4b09f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#a49b261c087f5435c3e190024bee0e487">shlist_prepend</a> (struct <a class="el" href="struct_s_h_list.html">SHList</a> *list, struct <a class="el" href="struct_s_h_list.html">SHList</a> *item)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert as first element.  <a href="#a49b261c087f5435c3e190024bee0e487"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#a830d005831a07a139bb268daa5ce179b">shlist_remove</a> (struct <a class="el" href="struct_s_h_list.html">SHList</a> *list, struct <a class="el" href="struct_s_h_list.html">SHList</a> *item)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an item.  <a href="#a830d005831a07a139bb268daa5ce179b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#acc30c9cacc868462846bfcbd0109baca">shlist_append</a> (struct <a class="el" href="struct_s_h_list.html">SHList</a> *list, struct <a class="el" href="struct_s_h_list.html">SHList</a> *node)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert as last element.  <a href="#acc30c9cacc868462846bfcbd0109baca"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#a31098adcb0661863cbc80c5aaf2f4fce">shlist_prepend</a> (struct <a class="el" href="struct_s_h_list.html">SHList</a> *list, struct <a class="el" href="struct_s_h_list.html">SHList</a> *node)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert as first element.  <a href="#a31098adcb0661863cbc80c5aaf2f4fce"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#a446424271c679eb1f6052b37ac02320f">shlist_remove</a> (struct <a class="el" href="struct_s_h_list.html">SHList</a> *node)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an node.  <a href="#a446424271c679eb1f6052b37ac02320f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#ace5fbed599eaa832d6c9bc582577cc69">shlist_empty</a> (const struct <a class="el" href="struct_s_h_list.html">SHList</a> *list)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">No elements?  <a href="#ace5fbed599eaa832d6c9bc582577cc69"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shlist_8h.html#afba1bfffaad8177c76a129ed785578e6">shlist_first</a> (const struct <a class="el" href="struct_s_h_list.html">SHList</a> *list)</td></tr>
@@ -134,15 +138,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac346527d01c897da7be15260536c3409"></a><!-- doxytag: member="shlist.h::shlist_for_each" ref="ac346527d01c897da7be15260536c3409" args="(item, list)" -->
+<a class="anchor" id="a59b917e52ee42898f677bb0071f6201a"></a><!-- doxytag: member="shlist.h::shlist_for_each" ref="a59b917e52ee42898f677bb0071f6201a" args="(node, list)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="shlist_8h.html#ac346527d01c897da7be15260536c3409">shlist_for_each</a></td>
+          <td class="memname">#define <a class="el" href="shlist_8h.html#a59b917e52ee42898f677bb0071f6201a">shlist_for_each</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">item, </td>
+          <td class="paramname">node, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -163,15 +167,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac942a70c094e8cb63bc779a5899fb166"></a><!-- doxytag: member="shlist.h::shlist_for_each_safe" ref="ac942a70c094e8cb63bc779a5899fb166" args="(item, list, tmp)" -->
+<a class="anchor" id="a444487bc9d8f49c959b1ca089d4aab2f"></a><!-- doxytag: member="shlist.h::shlist_for_each_safe" ref="a444487bc9d8f49c959b1ca089d4aab2f" args="(node, list, tmp)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="shlist_8h.html#ac942a70c094e8cb63bc779a5899fb166">shlist_for_each_safe</a></td>
+          <td class="memname">#define <a class="el" href="shlist_8h.html#a444487bc9d8f49c959b1ca089d4aab2f">shlist_for_each_safe</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">item, </td>
+          <td class="paramname">node, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -194,11 +198,53 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Loop over list and allow removing item. </p>
+<p>Loop over list and allow removing node. </p>
 
 </div>
 </div>
 <hr/><h2>Function Documentation</h2>
+<a class="anchor" id="af03278e6de8795e77c85e2af6d0c3f2e"></a><!-- doxytag: member="shlist.h::shlist_get_next" ref="af03278e6de8795e77c85e2af6d0c3f2e" args="(const struct SHList *node)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="struct_s_h_list.html">SHList</a>* <a class="el" href="shlist_8h.html#af03278e6de8795e77c85e2af6d0c3f2e">shlist_get_next</a> </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td><code> [static, read]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get next element in list. </p>
+
+<p>Referenced by <a class="el" href="shlist_8h.html#afba1bfffaad8177c76a129ed785578e6">shlist_first()</a>, <a class="el" href="shlist_8h.html#a31098adcb0661863cbc80c5aaf2f4fce">shlist_prepend()</a>, and <a class="el" href="shlist_8h.html#a446424271c679eb1f6052b37ac02320f">shlist_remove()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb35b4c4fa1833c218e5f0e141cc06c4"></a><!-- doxytag: member="shlist.h::shlist_get_prev" ref="acb35b4c4fa1833c218e5f0e141cc06c4" args="(const struct SHList *node)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="struct_s_h_list.html">SHList</a>* <a class="el" href="shlist_8h.html#acb35b4c4fa1833c218e5f0e141cc06c4">shlist_get_prev</a> </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td><code> [static, read]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get prev element in list. </p>
+
+<p>Referenced by <a class="el" href="shlist_8h.html#acc30c9cacc868462846bfcbd0109baca">shlist_append()</a>, <a class="el" href="shlist_8h.html#ae75cdf81b4f4efc471ccc1de94d5b8ef">shlist_last()</a>, and <a class="el" href="shlist_8h.html#a446424271c679eb1f6052b37ac02320f">shlist_remove()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="acd80cad4b2e778343e37cfd35ee42576"></a><!-- doxytag: member="shlist.h::shlist_init" ref="acd80cad4b2e778343e37cfd35ee42576" args="(struct SHList *list)" -->
 <div class="memitem">
 <div class="memproto">
@@ -216,16 +262,16 @@ Functions</h2></td></tr>
 
 <p>Initialize list head. </p>
 
-<p>References <a class="el" href="struct_s_h_list.html#a43818b00cdf7067fe27109bdf9a6d59c">SHList::next</a>, and <a class="el" href="struct_s_h_list.html#af3f4c8e778c1d9299f6eaae253fcd928">SHList::prev</a>.</p>
+<p>Referenced by <a class="el" href="shlist_8h.html#a446424271c679eb1f6052b37ac02320f">shlist_remove()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa203720c7a5437bc590c6a3678a4b09f"></a><!-- doxytag: member="shlist.h::shlist_append" ref="aa203720c7a5437bc590c6a3678a4b09f" args="(struct SHList *list, struct SHList *item)" -->
+<a class="anchor" id="acc30c9cacc868462846bfcbd0109baca"></a><!-- doxytag: member="shlist.h::shlist_append" ref="acc30c9cacc868462846bfcbd0109baca" args="(struct SHList *list, struct SHList *node)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="shlist_8h.html#aa203720c7a5437bc590c6a3678a4b09f">shlist_append</a> </td>
+          <td class="memname">static void <a class="el" href="shlist_8h.html#acc30c9cacc868462846bfcbd0109baca">shlist_append</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td>
           <td class="paramname"><em>list</em>, </td>
@@ -234,7 +280,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td>
-          <td class="paramname"><em>item</em>&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -247,16 +293,16 @@ Functions</h2></td></tr>
 
 <p>Insert as last element. </p>
 
-<p>References <a class="el" href="struct_s_h_list.html#a43818b00cdf7067fe27109bdf9a6d59c">SHList::next</a>, and <a class="el" href="struct_s_h_list.html#af3f4c8e778c1d9299f6eaae253fcd928">SHList::prev</a>.</p>
+<p>References <a class="el" href="shlist_8h.html#acb35b4c4fa1833c218e5f0e141cc06c4">shlist_get_prev()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a49b261c087f5435c3e190024bee0e487"></a><!-- doxytag: member="shlist.h::shlist_prepend" ref="a49b261c087f5435c3e190024bee0e487" args="(struct SHList *list, struct SHList *item)" -->
+<a class="anchor" id="a31098adcb0661863cbc80c5aaf2f4fce"></a><!-- doxytag: member="shlist.h::shlist_prepend" ref="a31098adcb0661863cbc80c5aaf2f4fce" args="(struct SHList *list, struct SHList *node)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="shlist_8h.html#a49b261c087f5435c3e190024bee0e487">shlist_prepend</a> </td>
+          <td class="memname">static void <a class="el" href="shlist_8h.html#a31098adcb0661863cbc80c5aaf2f4fce">shlist_prepend</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td>
           <td class="paramname"><em>list</em>, </td>
@@ -265,7 +311,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td>
-          <td class="paramname"><em>item</em>&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -278,38 +324,28 @@ Functions</h2></td></tr>
 
 <p>Insert as first element. </p>
 
-<p>References <a class="el" href="struct_s_h_list.html#a43818b00cdf7067fe27109bdf9a6d59c">SHList::next</a>, and <a class="el" href="struct_s_h_list.html#af3f4c8e778c1d9299f6eaae253fcd928">SHList::prev</a>.</p>
+<p>References <a class="el" href="shlist_8h.html#af03278e6de8795e77c85e2af6d0c3f2e">shlist_get_next()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a830d005831a07a139bb268daa5ce179b"></a><!-- doxytag: member="shlist.h::shlist_remove" ref="a830d005831a07a139bb268daa5ce179b" args="(struct SHList *list, struct SHList *item)" -->
+<a class="anchor" id="a446424271c679eb1f6052b37ac02320f"></a><!-- doxytag: member="shlist.h::shlist_remove" ref="a446424271c679eb1f6052b37ac02320f" args="(struct SHList *node)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="shlist_8h.html#a830d005831a07a139bb268daa5ce179b">shlist_remove</a> </td>
+          <td class="memname">static void <a class="el" href="shlist_8h.html#a446424271c679eb1f6052b37ac02320f">shlist_remove</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td>
-          <td class="paramname"><em>list</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="struct_s_h_list.html">SHList</a> *&#160;</td>
-          <td class="paramname"><em>item</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline, static]</code></td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Remove an item. </p>
+<p>Remove an node. </p>
 
-<p>References <a class="el" href="struct_s_h_list.html#a43818b00cdf7067fe27109bdf9a6d59c">SHList::next</a>, and <a class="el" href="struct_s_h_list.html#af3f4c8e778c1d9299f6eaae253fcd928">SHList::prev</a>.</p>
+<p>References <a class="el" href="shlist_8h.html#af03278e6de8795e77c85e2af6d0c3f2e">shlist_get_next()</a>, <a class="el" href="shlist_8h.html#acb35b4c4fa1833c218e5f0e141cc06c4">shlist_get_prev()</a>, and <a class="el" href="shlist_8h.html#acd80cad4b2e778343e37cfd35ee42576">shlist_init()</a>.</p>
 
 <p>Referenced by <a class="el" href="shlist_8h.html#aeb6911fff10d5dd7cccc368bdd843b95">shlist_pop()</a>.</p>
 
@@ -332,8 +368,6 @@ Functions</h2></td></tr>
 
 <p>No elements? </p>
 
-<p>References <a class="el" href="struct_s_h_list.html#a43818b00cdf7067fe27109bdf9a6d59c">SHList::next</a>, and <a class="el" href="struct_s_h_list.html#af3f4c8e778c1d9299f6eaae253fcd928">SHList::prev</a>.</p>
-
 <p>Referenced by <a class="el" href="shlist_8h.html#afba1bfffaad8177c76a129ed785578e6">shlist_first()</a>, and <a class="el" href="shlist_8h.html#ae75cdf81b4f4efc471ccc1de94d5b8ef">shlist_last()</a>.</p>
 
 </div>
@@ -355,7 +389,7 @@ Functions</h2></td></tr>
 
 <p>Return first elem. </p>
 
-<p>References <a class="el" href="struct_s_h_list.html#a43818b00cdf7067fe27109bdf9a6d59c">SHList::next</a>, and <a class="el" href="shlist_8h.html#ace5fbed599eaa832d6c9bc582577cc69">shlist_empty()</a>.</p>
+<p>References <a class="el" href="shlist_8h.html#ace5fbed599eaa832d6c9bc582577cc69">shlist_empty()</a>, and <a class="el" href="shlist_8h.html#af03278e6de8795e77c85e2af6d0c3f2e">shlist_get_next()</a>.</p>
 
 <p>Referenced by <a class="el" href="shlist_8h.html#aeb6911fff10d5dd7cccc368bdd843b95">shlist_pop()</a>.</p>
 
@@ -378,7 +412,7 @@ Functions</h2></td></tr>
 
 <p>Return last elem. </p>
 
-<p>References <a class="el" href="struct_s_h_list.html#af3f4c8e778c1d9299f6eaae253fcd928">SHList::prev</a>, and <a class="el" href="shlist_8h.html#ace5fbed599eaa832d6c9bc582577cc69">shlist_empty()</a>.</p>
+<p>References <a class="el" href="shlist_8h.html#ace5fbed599eaa832d6c9bc582577cc69">shlist_empty()</a>, and <a class="el" href="shlist_8h.html#acb35b4c4fa1833c218e5f0e141cc06c4">shlist_get_prev()</a>.</p>
 
 </div>
 </div>
@@ -399,7 +433,7 @@ Functions</h2></td></tr>
 
 <p>Remove first elem. </p>
 
-<p>References <a class="el" href="shlist_8h.html#afba1bfffaad8177c76a129ed785578e6">shlist_first()</a>, and <a class="el" href="shlist_8h.html#a830d005831a07a139bb268daa5ce179b">shlist_remove()</a>.</p>
+<p>References <a class="el" href="shlist_8h.html#afba1bfffaad8177c76a129ed785578e6">shlist_first()</a>, and <a class="el" href="shlist_8h.html#a446424271c679eb1f6052b37ac02320f">shlist_remove()</a>.</p>
 
 </div>
 </div>

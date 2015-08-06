@@ -65,34 +65,34 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef unsigned int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#a9963839c8b239ad1604fd7c24cd21743">cbtree_getkey_func</a> )(void *ctx, void *obj, const void **dst_p)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns length of the key  <a href="#a9963839c8b239ad1604fd7c24cd21743"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef size_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#a3ec9be73d9a460f3b5b1bd387e4ed14e">cbtree_getkey_func</a> )(void *ctx, void *obj, const void **dst_p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns length of the key  <a href="#a3ec9be73d9a460f3b5b1bd387e4ed14e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#a6db2f8bc92bd7ee4dbbae9c3148a9040">cbtree_walker_func</a> )(void *ctx, void *obj)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">walk over tree  <a href="#a6db2f8bc92bd7ee4dbbae9c3148a9040"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct CBTree *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#adde759d374214dc26e811b8d24b90877">cbtree_create</a> (<a class="el" href="cbtree_8h.html#a9963839c8b239ad1604fd7c24cd21743">cbtree_getkey_func</a> obj_key_cb, <a class="el" href="cbtree_8h.html#a6db2f8bc92bd7ee4dbbae9c3148a9040">cbtree_walker_func</a> obj_free_cb, void *cb_ctx, <a class="el" href="struct_cx_mem.html">CxMem</a> *cx)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct CBTree *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#adde759d374214dc26e811b8d24b90877">cbtree_create</a> (<a class="el" href="cbtree_8h.html#a3ec9be73d9a460f3b5b1bd387e4ed14e">cbtree_getkey_func</a> obj_key_cb, <a class="el" href="cbtree_8h.html#a6db2f8bc92bd7ee4dbbae9c3148a9040">cbtree_walker_func</a> obj_free_cb, void *cb_ctx, <a class="el" href="struct_cx_mem.html">CxMem</a> *cx)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new tree.  <a href="#adde759d374214dc26e811b8d24b90877"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#a6a73ed80ee440afcd7d4f28ee8588103">cbtree_destroy</a> (struct CBTree *tree)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">frees all resources allocated.  <a href="#a6a73ed80ee440afcd7d4f28ee8588103"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#ac67a3ab11cf65924a5c7e518fa562922">cbtree_insert</a> (struct CBTree *tree, void *obj) _MUSTCHECK</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#ac67a3ab11cf65924a5c7e518fa562922">cbtree_insert</a> (struct CBTree *tree, void *obj) <a class="el" href="base_8h.html#a85cd253c2de3e111bd2986b324488888">_MUSTCHECK</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts new node to tree.  <a href="#ac67a3ab11cf65924a5c7e518fa562922"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#ae766dd90b69288ee53ca7ac5b633d5a2">cbtree_delete</a> (struct CBTree *tree, const void *key, unsigned klen)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Removed node from tree.  <a href="#ae766dd90b69288ee53ca7ac5b633d5a2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#a6e5437074f7abcae164b83d58a2db766">cbtree_lookup</a> (struct CBTree *tree, const void *key, unsigned klen)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup a key.  <a href="#a6e5437074f7abcae164b83d58a2db766"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#a63ba3d18af01250d3222327d112eb97b">cbtree_delete</a> (struct CBTree *tree, const void *key, size_t klen)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Removed node from tree.  <a href="#a63ba3d18af01250d3222327d112eb97b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#a9cb05aa0cb6b0c8ea70b27b88715bb15">cbtree_lookup</a> (struct CBTree *tree, const void *key, size_t klen)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup a key.  <a href="#a9cb05aa0cb6b0c8ea70b27b88715bb15"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cbtree_8h.html#a64038ef46174a234598cab8dfebaef63">cbtree_walk</a> (struct CBTree *tree, <a class="el" href="cbtree_8h.html#a6db2f8bc92bd7ee4dbbae9c3148a9040">cbtree_walker_func</a> cb_func, void *cb_arg)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Walk over tree.  <a href="#a64038ef46174a234598cab8dfebaef63"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Crit-bit tree / binary radix tree. </p>
 </div><hr/><h2>Typedef Documentation</h2>
-<a class="anchor" id="a9963839c8b239ad1604fd7c24cd21743"></a><!-- doxytag: member="cbtree.h::cbtree_getkey_func" ref="a9963839c8b239ad1604fd7c24cd21743" args=")(void *ctx, void *obj, const void **dst_p)" -->
+<a class="anchor" id="a3ec9be73d9a460f3b5b1bd387e4ed14e"></a><!-- doxytag: member="cbtree.h::cbtree_getkey_func" ref="a3ec9be73d9a460f3b5b1bd387e4ed14e" args=")(void *ctx, void *obj, const void **dst_p)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef unsigned int(* <a class="el" href="cbtree_8h.html#a9963839c8b239ad1604fd7c24cd21743">cbtree_getkey_func</a>)(void *ctx, void *obj, const void **dst_p)</td>
+          <td class="memname">typedef size_t(* <a class="el" href="cbtree_8h.html#a3ec9be73d9a460f3b5b1bd387e4ed14e">cbtree_getkey_func</a>)(void *ctx, void *obj, const void **dst_p)</td>
         </tr>
       </table>
 </div>
@@ -125,7 +125,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">struct CBTree* <a class="el" href="cbtree_8h.html#adde759d374214dc26e811b8d24b90877">cbtree_create</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cbtree_8h.html#a9963839c8b239ad1604fd7c24cd21743">cbtree_getkey_func</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="cbtree_8h.html#a3ec9be73d9a460f3b5b1bd387e4ed14e">cbtree_getkey_func</a>&#160;</td>
           <td class="paramname"><em>obj_key_cb</em>, </td>
         </tr>
         <tr>
@@ -217,12 +217,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae766dd90b69288ee53ca7ac5b633d5a2"></a><!-- doxytag: member="cbtree.h::cbtree_delete" ref="ae766dd90b69288ee53ca7ac5b633d5a2" args="(struct CBTree *tree, const void *key, unsigned klen)" -->
+<a class="anchor" id="a63ba3d18af01250d3222327d112eb97b"></a><!-- doxytag: member="cbtree.h::cbtree_delete" ref="a63ba3d18af01250d3222327d112eb97b" args="(struct CBTree *tree, const void *key, size_t klen)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="cbtree_8h.html#ae766dd90b69288ee53ca7ac5b633d5a2">cbtree_delete</a> </td>
+          <td class="memname">bool <a class="el" href="cbtree_8h.html#a63ba3d18af01250d3222327d112eb97b">cbtree_delete</a> </td>
           <td>(</td>
           <td class="paramtype">struct CBTree *&#160;</td>
           <td class="paramname"><em>tree</em>, </td>
@@ -236,7 +236,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>klen</em>&#160;</td>
         </tr>
         <tr>
@@ -254,12 +254,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6e5437074f7abcae164b83d58a2db766"></a><!-- doxytag: member="cbtree.h::cbtree_lookup" ref="a6e5437074f7abcae164b83d58a2db766" args="(struct CBTree *tree, const void *key, unsigned klen)" -->
+<a class="anchor" id="a9cb05aa0cb6b0c8ea70b27b88715bb15"></a><!-- doxytag: member="cbtree.h::cbtree_lookup" ref="a9cb05aa0cb6b0c8ea70b27b88715bb15" args="(struct CBTree *tree, const void *key, size_t klen)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* <a class="el" href="cbtree_8h.html#a6e5437074f7abcae164b83d58a2db766">cbtree_lookup</a> </td>
+          <td class="memname">void* <a class="el" href="cbtree_8h.html#a9cb05aa0cb6b0c8ea70b27b88715bb15">cbtree_lookup</a> </td>
           <td>(</td>
           <td class="paramtype">struct CBTree *&#160;</td>
           <td class="paramname"><em>tree</em>, </td>
@@ -273,7 +273,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>klen</em>&#160;</td>
         </tr>
         <tr>

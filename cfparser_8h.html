@@ -112,7 +112,7 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ops for lookup, takes table as argument.  <a href="#a3a52b3f798fead4d8cd2c0b76e9f2269"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfparser_8h.html#ad4d081c3d1576388ef1bbbb367c2c2db">cf_load_file</a> (const struct <a class="el" href="struct_cf_context.html">CfContext</a> *cf, const char *fn) _MUSTCHECK</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfparser_8h.html#ad4d081c3d1576388ef1bbbb367c2c2db">cf_load_file</a> (const struct <a class="el" href="struct_cf_context.html">CfContext</a> *cf, const char *fn) <a class="el" href="base_8h.html#a85cd253c2de3e111bd2986b324488888">_MUSTCHECK</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Load config from file.  <a href="#ad4d081c3d1576388ef1bbbb367c2c2db"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfparser_8h.html#aef9e3b9e9098f3f24463da44b25d7057">cf_get</a> (const struct <a class="el" href="struct_cf_context.html">CfContext</a> *cf, const char *sect, const char *var, char *buf, int buflen)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get single value.  <a href="#aef9e3b9e9098f3f24463da44b25d7057"></a><br/></td></tr>
@@ -149,7 +149,7 @@ Functions</h2></td></tr>
 Simple line-by-line parser</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfparser_8h.html#a584e8c53fc50d223a4b7faaee809fdc6">cf_handler_f</a> )(void *arg, bool is_sect, const char *key, const char *val)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback signarure for <a class="el" href="cfparser_8h.html#accbb3f29ef9e671cb7c6f9e56b1950c5">parse_ini_file()</a>  <a href="#a584e8c53fc50d223a4b7faaee809fdc6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfparser_8h.html#accbb3f29ef9e671cb7c6f9e56b1950c5">parse_ini_file</a> (const char *fn, <a class="el" href="cfparser_8h.html#a584e8c53fc50d223a4b7faaee809fdc6">cf_handler_f</a> user_handler, void *arg) _MUSTCHECK</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfparser_8h.html#accbb3f29ef9e671cb7c6f9e56b1950c5">parse_ini_file</a> (const char *fn, <a class="el" href="cfparser_8h.html#a584e8c53fc50d223a4b7faaee809fdc6">cf_handler_f</a> user_handler, void *arg) <a class="el" href="base_8h.html#a85cd253c2de3e111bd2986b324488888">_MUSTCHECK</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple parser, launches callback for each line.  <a href="#accbb3f29ef9e671cb7c6f9e56b1950c5"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
